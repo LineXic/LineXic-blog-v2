@@ -28,7 +28,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://linexic.top/img/l.jpg">
 <meta property="article:published_time" content="2024-06-06T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-20T16:29:46.862Z">
+<meta property="article:modified_time" content="2024-12-20T17:09:47.398Z">
 <meta property="article:author" content="LineXic">
 <meta property="article:tag" content="碎碎念">
 <meta property="article:tag" content="杂谈">
@@ -399,24 +399,25 @@
   
     <article id="comments" lazyload>
       
-  <div id="waline"></div>
+  <div id="twikoo"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createCssLink('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.css')
-      Fluid.utils.createScript('https://registry.npmmirror.com/@waline/client/2.15.8/files/dist/waline.js', function() {
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://talk.linexic.top/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
+          {"envId":"https://talk.linexic.top/","region":"ap-shanghai","path":"window.location.pathname"},
           {
-            el: '#waline',
-            path: window.location.pathname
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
           }
         )
-        Waline.init(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          var imgSelector = '#waline .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
+        twikoo.init(options)
       });
     });
   </script>
