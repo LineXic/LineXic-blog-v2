@@ -67,7 +67,7 @@
     <link href="/2024/12/01/2024-11-29-guigu-css-24-%E9%A2%9C%E8%89%B2%E5%8D%95%E4%BD%8D%E5%AE%9A%E4%B9%89/"/>
     <url>/2024/12/01/2024-11-29-guigu-css-24-%E9%A2%9C%E8%89%B2%E5%8D%95%E4%BD%8D%E5%AE%9A%E4%B9%89/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本文基于<a href="https://b23.tv/Wky0XJk">尚硅谷Web前端基础</a>教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结</p></blockquote><p><img src="https://linexic.top/img/css.png" alt="封面图"></p><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><img src="https://linexic.top/img/blog/Screenshot_2024_1130_235600.png" alt="图片"></p><p>上篇讲了长度单位，这次讲一下经常使用的颜色单位</p><p>颜色在生活中并不罕见，生活处处有颜色，处处都是多姿多彩的。也有一些带有警告意味的颜色：交通中的斑马线，警示牌，红绿灯等</p><p>在CSS中颜色可以是red，yellow，blue等但这些英文字母的使用并不方便，甚至有些颜色你用中文和英文都描述不出来！这个时候就要用到RGB值了</p><h2 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h2><ul><li>R red G green B blue</li></ul><p>它实际的意思就是你用三原色去搭配颜色的它的语法是这样的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(红色,绿色,蓝色);<br></code></pre></td></tr></table></figure><p>其中红色，绿色，蓝色可以取数值，数值范围在0-255或者1%-100%中。在一些取色软件上可以直接RGB值取色，也很方便</p><h3 id="RGBA"><a href="#RGBA" class="headerlink" title="RGBA"></a>RGBA</h3><p>顺带讲一下它的语法和RGB差不多，但它的目的是定义透明度，前三个和RGB一样，只是后面的表示不透明，具体语法是</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(红色,绿色,蓝色,<span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure><p>经常用的也就三个</p><ul><li>1表示完全不透明</li><li>0表示完全透明</li><li>.5表示半透明</li></ul><h2 id="十六进制的RGB值"><a href="#十六进制的RGB值" class="headerlink" title="十六进制的RGB值"></a>十六进制的RGB值</h2><p>不要以为把颜色转化为16进制很麻烦了，它和普通的RGB相比有以下优点</p><p>1.简洁性<br>通过00-ff绘出颜色要以<code>#</code>开头<br>2.易读性<br>因为转化了，相比于原来的一格一格数字可读性高了</p><p>如果不知道自己想要的颜色是怎么样的可以在<a href="https://encycolorpedia.cn/">这里</a>查找，并且配有对比之类的</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本文基于<a href="https://b23.tv/Wky0XJk">尚硅谷Web前端基础</a>教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结</p></blockquote><h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><img src="https://linexic.top/img/blog/Screenshot_2024_1130_235600.png" alt="图片"></p><p>上篇讲了长度单位，这次讲一下经常使用的颜色单位</p><p>颜色在生活中并不罕见，生活处处有颜色，处处都是多姿多彩的。也有一些带有警告意味的颜色：交通中的斑马线，警示牌，红绿灯等</p><p>在CSS中颜色可以是red，yellow，blue等但这些英文字母的使用并不方便，甚至有些颜色你用中文和英文都描述不出来！这个时候就要用到RGB值了</p><h2 id="RGB"><a href="#RGB" class="headerlink" title="RGB"></a>RGB</h2><ul><li>R red G green B blue</li></ul><p>它实际的意思就是你用三原色去搭配颜色的它的语法是这样的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(红色,绿色,蓝色);<br></code></pre></td></tr></table></figure><p>其中红色，绿色，蓝色可以取数值，数值范围在0-255或者1%-100%中。在一些取色软件上可以直接RGB值取色，也很方便</p><h3 id="RGBA"><a href="#RGBA" class="headerlink" title="RGBA"></a>RGBA</h3><p>顺带讲一下它的语法和RGB差不多，但它的目的是定义透明度，前三个和RGB一样，只是后面的表示不透明，具体语法是</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(红色,绿色,蓝色,<span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure><p>经常用的也就三个</p><ul><li>1表示完全不透明</li><li>0表示完全透明</li><li>.5表示半透明</li></ul><h2 id="十六进制的RGB值"><a href="#十六进制的RGB值" class="headerlink" title="十六进制的RGB值"></a>十六进制的RGB值</h2><p>不要以为把颜色转化为16进制很麻烦了，它和普通的RGB相比有以下优点</p><p>1.简洁性<br>通过00-ff绘出颜色要以<code>#</code>开头<br>2.易读性<br>因为转化了，相比于原来的一格一格数字可读性高了</p><p>如果不知道自己想要的颜色是怎么样的可以在<a href="https://encycolorpedia.cn/">这里</a>查找，并且配有对比之类的</p>]]></content>
     
     
     
@@ -94,7 +94,9 @@
     
     <tags>
       
-      <tag>月记</tag>
+      <tag>前端</tag>
+      
+      <tag>CSS</tag>
       
     </tags>
     
@@ -227,7 +229,7 @@
     <link href="/2024/08/13/2024-08-13-guigu-css-21/"/>
     <url>/2024/08/13/2024-08-13-guigu-css-21/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本文基于<a href="https://b23.tv/Wky0XJk">尚硅谷Web前端基础</a>教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结</p></blockquote><p><img src="https://img.linexic.top/file/d757a4cd4b3fb222b9d16.png" alt="好抽象的东西"><br>ps:（好抽象的玩意</p><blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Inheritance">继承</a></p></blockquote><p>像现实中儿子继承父亲财产一样，子标签也会继承父标签的一些相关样式[<a href="https://linexic.top/2024/06/29/guigu-css-18/#%E5%85%B3%E7%B3%BB%E9%80%89%E6%8B%A9%E5%99%A8">1</a>]在web中你也可以通过定义父标签来让子标签更改样式，使我们更容易开发（如果有一天你不知道一个标签规则的作用是什么，你不妨想想没有了这个标签规则将会发生什么）</p><p>我们可以这样运用</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br>&lt;/style&gt;<br><br>&lt;<span class="hljs-selector-tag">p</span>&gt;我是<span class="hljs-selector-tag">p</span><br>&lt;<span class="hljs-selector-tag">span</span>&gt; 我是<span class="hljs-selector-tag">span</span>&lt;/<span class="hljs-selector-tag">span</span>&gt;<br>&lt;/<span class="hljs-selector-tag">p</span>&gt;<br></code></pre></td></tr></table></figure><p><em><strong>注意，行内元素不能套块元素</strong></em></p><p><img src="https://img.linexic.top/file/3d03713d560df0a2282d3.png" alt="运行"></p><p>这是怎么回事呢，我没有给span设置样式啊，他怎么自己变成红色了？这就要归功于<em><strong>继承</strong></em>了：设置了父元素的样式后子元素也会跟着改变</p><blockquote><p>利用继承我们可以将一些通用的样式统一设置到共同的祖先样式上，这样只设置一次即可让所有的样式都被继承</p></blockquote><p>说了这么多那些样式是可以继承，那些样式不能继承呢？</p><p>1）行内和块元素等可以被继承<br><br>2）背景布局等元素不可以被继承</p><p>说起这个我也有一个坑，当时的代码是这么写的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt; <br>&lt;<span class="hljs-selector-tag">span</span>&gt;<br>    点击图片查看详情<br>  &lt;/<span class="hljs-selector-tag">p</span>&gt;<br>&lt;/<span class="hljs-selector-tag">span</span>&gt;<br><br>&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">background</span>: gold;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure><p>乍一看没什么问题，<code>p</code>元素设置背景颜色为金色，可我忘了还有继承这一说导致最后变成了这样<br><img src="https://img.linexic.top/file/d386ee2f772225cbd9ddc.png"><br>两个标签两个范围都变成了金色，所以我改善后是这么写的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;<br>  &lt;<span class="hljs-selector-tag">span</span>&gt;<br>    点击图片查看详情<br>  &lt;/<span class="hljs-selector-tag">span</span>&gt;<br>&lt;/<span class="hljs-selector-tag">p</span>&gt;<br><br>&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &gt; <span class="hljs-selector-tag">span</span>&#123;<br>  <span class="hljs-attribute">background</span>: gold;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure><p>定义明确是p里面的span也就不存在继承这一说了，还有一个原因是继承本身不能用背景和布局，这样运用肯定会出错误，虽然当时span也出现背景了，但那个不是真的背景，只是p背景中透到span的，并不是span的继承背景<br><img src="https://img.linexic.top/file/e4c0ee27a813d5f9a0dca.png" alt="图片"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本文基于<a href="https://b23.tv/Wky0XJk">尚硅谷Web前端基础</a>教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结</p></blockquote><p><img src="https://img.linexic.top/file/d757a4cd4b3fb222b9d16.png" alt="好抽象的东西"></p><blockquote><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Inheritance">继承</a></p></blockquote><p>像现实中儿子继承父亲财产一样，子标签也会继承父标签的一些相关样式[<a href="https://linexic.top/2024/06/29/guigu-css-18/#%E5%85%B3%E7%B3%BB%E9%80%89%E6%8B%A9%E5%99%A8">1</a>]在web中你也可以通过定义父标签来让子标签更改样式，使我们更容易开发（如果有一天你不知道一个标签规则的作用是什么，你不妨想想没有了这个标签规则将会发生什么）</p><p>我们可以这样运用</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br>&lt;/style&gt;<br><br>&lt;<span class="hljs-selector-tag">p</span>&gt;我是<span class="hljs-selector-tag">p</span><br>&lt;<span class="hljs-selector-tag">span</span>&gt; 我是<span class="hljs-selector-tag">span</span>&lt;/<span class="hljs-selector-tag">span</span>&gt;<br>&lt;/<span class="hljs-selector-tag">p</span>&gt;<br></code></pre></td></tr></table></figure><p><em><strong>注意，行内元素不能套块元素</strong></em></p><p><img src="https://img.linexic.top/file/3d03713d560df0a2282d3.png" alt="运行"></p><p>这是怎么回事呢，我没有给span设置样式啊，他怎么自己变成红色了？这就要归功于<em><strong>继承</strong></em>了：设置了父元素的样式后子元素也会跟着改变</p><blockquote><p>利用继承我们可以将一些通用的样式统一设置到共同的祖先样式上，这样只设置一次即可让所有的样式都被继承</p></blockquote><p>说了这么多那些样式是可以继承，那些样式不能继承呢？</p><p>1）行内和块元素等可以被继承<br><br>2）背景布局等元素不可以被继承</p><p>说起这个我也有一个坑，当时的代码是这么写的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt; <br>&lt;<span class="hljs-selector-tag">span</span>&gt;<br>    点击图片查看详情<br>  &lt;/<span class="hljs-selector-tag">p</span>&gt;<br>&lt;/<span class="hljs-selector-tag">span</span>&gt;<br><br>&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">background</span>: gold;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure><p>乍一看没什么问题，<code>p</code>元素设置背景颜色为金色，可我忘了还有继承这一说导致最后变成了这样<br><img src="https://img.linexic.top/file/d386ee2f772225cbd9ddc.png"><br>两个标签两个范围都变成了金色，所以我改善后是这么写的</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;<br>  &lt;<span class="hljs-selector-tag">span</span>&gt;<br>    点击图片查看详情<br>  &lt;/<span class="hljs-selector-tag">span</span>&gt;<br>&lt;/<span class="hljs-selector-tag">p</span>&gt;<br><br>&lt;style&gt;<br><span class="hljs-selector-tag">p</span> &gt; <span class="hljs-selector-tag">span</span>&#123;<br>  <span class="hljs-attribute">background</span>: gold;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure><p>定义明确是p里面的span也就不存在继承这一说了，还有一个原因是继承本身不能用背景和布局，这样运用肯定会出错误，虽然当时span也出现背景了，但那个不是真的背景，只是p背景中透到span的，并不是span的继承背景<br><img src="https://img.linexic.top/file/e4c0ee27a813d5f9a0dca.png" alt="图片"></p>]]></content>
     
     
     
@@ -288,7 +290,7 @@
     <link href="/2024/07/11/2024-07-11-ladybird/"/>
     <url>/2024/07/11/2024-07-11-ladybird/</url>
     
-    <content type="html"><![CDATA[<p>现在的互联网看此已经形成了一种趋势就是Chrome，Edge，Firefox三大浏览器巨头占据网络，并且现在有名的闭源浏览器Brave 和 Opera都采用了Google的Chromium搜索引擎而chrome就占领了「头头」地位了，这个时候有一个开源浏览器就显得尤为重要，不受商业模式的污染，只专心做自己的浏览器</p><p>值得注意的时候，20年前，GitHub的创始人就为了Firefox买下了两页广告纸<br><img src="https://blog.linexic.top/img/Firefox1.0.jpeg" alt="Firefox"><br>看得出来他很是喜爱和支持开源事业，他认为现在的市场需要一个独立并有创新精神的浏览器，所以投资100万赞助了这款浏览器</p><p>它的独立性体现在两个方面：</p><ul><li>技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码</li><li>收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营</li></ul><p>在这里贴一下Ladybird浏览器的<a href="https://github.com/LadybirdBrowser/ladybird">GitHub仓库</a>地址。该项目目前还在开发阶段，预计2026年夏天上市</p><blockquote><p><a href="https://juejin.cn/post/7389145163857985587">掘金关于Ladybird的热点地址</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>现在的互联网看此已经形成了一种趋势就是Chrome，Edge，Firefox三大浏览器巨头占据网络，并且现在有名的闭源浏览器Brave 和 Opera都采用了Google的Chromium搜索引擎而chrome就占领了「头头」地位了，这个时候有一个开源浏览器就显得尤为重要，不受商业模式的污染，只专心做自己的浏览器</p><p>值得注意的时候，20年前，GitHub的创始人就为了Firefox买下了两页广告纸<br><img src="https://linexic.top/img/Firefox1.0.jpeg" alt="Firefox"><br>看得出来他很是喜爱和支持开源事业，他认为现在的市场需要一个独立并有创新精神的浏览器，所以投资100万赞助了这款浏览器</p><p>它的独立性体现在两个方面：</p><ul><li>技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码</li><li>收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营</li></ul><p>在这里贴一下Ladybird浏览器的<a href="https://github.com/LadybirdBrowser/ladybird">GitHub仓库</a>地址。该项目目前还在开发阶段，预计2026年夏天上市</p><blockquote><p><a href="https://juejin.cn/post/7389145163857985587">掘金关于Ladybird的热点地址</a></p></blockquote>]]></content>
     
     
     
@@ -389,7 +391,7 @@
     <link href="/2024/06/22/2024-6-22-bi-ye-la/"/>
     <url>/2024/06/22/2024-6-22-bi-ye-la/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>图片来自网络<br>本博客写于6月19日中考看考场前夕，重新编辑于6月22中考结束，主要记录中考的经历</p></blockquote><p><img src="https://linexic.top/img/school.jpeg" alt="封面图"></p><blockquote><p>图片欠缺</p></blockquote><p>我们（2021）级学生终于迎来了中考这一大关，有人说中考比高考重要，因为没有中考哪里来的高考，现在想想也是，但他们都是</p><blockquote><p>千军万马过独木桥</p></blockquote><p>今年我所在的县城共有一万五千多人参加中考，比去年多得多，所以竞争有多了</p><h1 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h1><p>考试那天我是五点多醒的，准确来说是被喊起来的平常我也根本不在那个点醒来，迷迷糊糊的穿上衣服洗了把脸清醒了过来，迅速把东西收拾好就出发了，连饭也是买了个煎饼果子，一杯豆浆在路上吃的</p><p>路上我还在看语文课本，想着自己查漏补缺，怎么说呢，那时候就想着：“考个好成绩”</p><p>直到到了考点我开始紧张了起来，距离在领班老师那里签到还有一段时间，我就在车上复习，索性：第一场考我拿手的语文</p><p>字词填空，古诗默写，阅读理解一气呵成（有错误在检查的时候被改正了），可由于我考前的紧张导致我看错了时间，本来的十点左右我看成了十一点左右（索性最后稳住了性子），以为快交卷了的我急忙写作文，这时前面只剩两道大题</p><p>一看作文我傻眼了“定心丸”什么啊，“一句宽慰的话，一个鼓励的眼神…”行吧，开写吧，考前背的押题作文全无用<br><img src="https://img.chengai77a6b.top/imgse/Image_1722267460070.jpg" alt="定心丸作文"></p><p>好在剩最后十五分钟的时候写完并检查了（作文只差两行就写满了）我的语文卷应该胜率挺高的吧，卷面最开始都一些蹭到的油笔芯痕迹也拿橡皮擦过了</p><h1 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h1><p>这一天考试全是我不擅长的数学和英语<br>从教室门进去我就看见老师讲台上的试卷文件在那里堆放，眼睛里也有些疲倦，我看向台下部分同学，他们眼睛里写着“快tm结束吧，太累了”</p><p>确实中考很累，不光是学生，家长在外面等也很累，反正是个很累人的活，我现在在半夜十一点编辑这篇博客的时候手机都差点砸到脸上</p><h1 id="吃饭"><a href="#吃饭" class="headerlink" title="吃饭"></a>吃饭</h1><p>中考除了考试也是要吃的，中午会出去，第一天下了雨买了两份米饭快餐盒饭在自家车里吃，我打开了一份，家长的那一份还没打开我的那份就撒了，家长把她的那份给我了</p><p>第二天中午吃的土豆粉，没有在车里吃，但那家店老板脾气有点古怪，也不留客，先让客人扫支付码&#x2F;付钱他才给起锅开灶（店里人也多，也乱），我们那份本来是要在店里吃的，结果给我们打包了…</p><h1 id="中考必胜"><a href="#中考必胜" class="headerlink" title="中考必胜"></a>中考必胜</h1><p>这里借用英语听力的一段话</p><blockquote><p>听力部分到此结束，预祝同学们取得好成绩</p></blockquote><p>晚安，祝好梦</p>]]></content>
+    <content type="html"><![CDATA[<hr><h2 id="title-毕业啦！！！tags-杂谈-碎碎念-index-img-img-school-jpegbanner-img-img-school-jpegdate-2024-06-22-00-00-00"><a href="#title-毕业啦！！！tags-杂谈-碎碎念-index-img-img-school-jpegbanner-img-img-school-jpegdate-2024-06-22-00-00-00" class="headerlink" title="title: 毕业啦！！！tags: [杂谈,碎碎念]index_img: &#x2F;img&#x2F;school.jpegbanner_img: &#x2F;img&#x2F;school.jpegdate: 2024-06-22 00:00:00"></a>title: 毕业啦！！！<br>tags: [杂谈,碎碎念]<br>index_img: &#x2F;img&#x2F;school.jpeg<br>banner_img: &#x2F;img&#x2F;school.jpeg<br>date: 2024-06-22 00:00:00</h2><blockquote><p>图片来自网络<br>本博客写于6月19日中考看考场前夕，重新编辑于6月22中考结束，主要记录中考的经历</p></blockquote><p><img src="https://linexic.top/img/school.jpeg" alt="封面图"></p><blockquote><p>图片欠缺</p></blockquote><p>我们（2021）级学生终于迎来了中考这一大关，有人说中考比高考重要，因为没有中考哪里来的高考，现在想想也是，但他们都是</p><blockquote><p>千军万马过独木桥</p></blockquote><p>今年我所在的县城共有一万五千多人参加中考，比去年多得多，所以竞争有多了</p><h1 id="考试"><a href="#考试" class="headerlink" title="考试"></a>考试</h1><p>考试那天我是五点多醒的，准确来说是被喊起来的平常我也根本不在那个点醒来，迷迷糊糊的穿上衣服洗了把脸清醒了过来，迅速把东西收拾好就出发了，连饭也是买了个煎饼果子，一杯豆浆在路上吃的</p><p>路上我还在看语文课本，想着自己查漏补缺，怎么说呢，那时候就想着：“考个好成绩”</p><p>直到到了考点我开始紧张了起来，距离在领班老师那里签到还有一段时间，我就在车上复习，索性：第一场考我拿手的语文</p><p>字词填空，古诗默写，阅读理解一气呵成（有错误在检查的时候被改正了），可由于我考前的紧张导致我看错了时间，本来的十点左右我看成了十一点左右（索性最后稳住了性子），以为快交卷了的我急忙写作文，这时前面只剩两道大题</p><p>一看作文我傻眼了“定心丸”什么啊，“一句宽慰的话，一个鼓励的眼神…”行吧，开写吧，考前背的押题作文全无用<br><img src="https://img.chengai77a6b.top/imgse/Image_1722267460070.jpg" alt="定心丸作文"></p><p>好在剩最后十五分钟的时候写完并检查了（作文只差两行就写满了）我的语文卷应该胜率挺高的吧，卷面最开始都一些蹭到的油笔芯痕迹也拿橡皮擦过了</p><h1 id="第二天"><a href="#第二天" class="headerlink" title="第二天"></a>第二天</h1><p>这一天考试全是我不擅长的数学和英语<br>从教室门进去我就看见老师讲台上的试卷文件在那里堆放，眼睛里也有些疲倦，我看向台下部分同学，他们眼睛里写着“快tm结束吧，太累了”</p><p>确实中考很累，不光是学生，家长在外面等也很累，反正是个很累人的活，我现在在半夜十一点编辑这篇博客的时候手机都差点砸到脸上</p><h1 id="吃饭"><a href="#吃饭" class="headerlink" title="吃饭"></a>吃饭</h1><p>中考除了考试也是要吃的，中午会出去，第一天下了雨买了两份米饭快餐盒饭在自家车里吃，我打开了一份，家长的那一份还没打开我的那份就撒了，家长把她的那份给我了</p><p>第二天中午吃的土豆粉，没有在车里吃，但那家店老板脾气有点古怪，也不留客，先让客人扫支付码&#x2F;付钱他才给起锅开灶（店里人也多，也乱），我们那份本来是要在店里吃的，结果给我们打包了…</p><h1 id="中考必胜"><a href="#中考必胜" class="headerlink" title="中考必胜"></a>中考必胜</h1><p>这里借用英语听力的一段话</p><blockquote><p>听力部分到此结束，预祝同学们取得好成绩</p></blockquote><p>晚安，祝好梦</p>]]></content>
     
     
     
@@ -448,29 +450,6 @@
   
   
   <entry>
-    <title>手把手教你用jekyll和手机termux搭建一个个人静态博客</title>
-    <link href="/2024/04/30/2024-04-30-termux-jekyll-blog/"/>
-    <url>/2024/04/30/2024-04-30-termux-jekyll-blog/</url>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="http://jekyllcn.com/">jekyll</a>是一个静态站点生成器，内置 GitHub Pages 支持和简化的构建过程。 </p><p>不再需要数据库，不需要开发评论功能，不需要不断的更新版本——只用关心你的博客内容。</p><p>Jekyll 使用 Markdown 和 HTML 文件，并根据您选择的布局创建完整静态网站。 Jekyll 支持 Markdown 和 Lick，这是一种可在网站上加载动态内容的模板语言。 有关详细信息，请参阅 Jekyll。</p><p>Windows 并未正式支持 Jekyll。 有关详细信息，请参阅 Jekyll 文档中的“<a href="https://jekyllcn.com/docs/windows/#installation">Windows 上的 Jekyll</a>”。</p><p>可以将 Jekyll 用于 <a href="https://docs.github.com/zh/pages/getting-started-with-github-pages/about-github-pages#static-site-generators">GitHub Pages</a>。 如果您喜欢，可以使用其他静态站点生成器或者在本地或其他服务器上自定义构建过程</p><h1 id="如何搭建？"><a href="#如何搭建？" class="headerlink" title="如何搭建？"></a>如何搭建？</h1><blockquote><p><a href="http://jekyllcn.com/docs/home/">jekyll中文文档</a></p></blockquote><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li><a href="https://www.ruby-lang.org/zh_cn/">Ruby</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pkg install ruby<br></code></pre></td></tr></table></figure></li><li><a href="https://rubygems.org/pages/download">RubyGems</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">gem update --system<br></code></pre></td></tr></table></figure></li><li>Linux</li><li><a href="https://nodejs.org/">NodeJs</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pkg install node<br></code></pre></td></tr></table></figure></li><li><a href="https://www.python.org/downloads/">Python 2.7</a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pkg install python<br></code></pre></td></tr></table></figure></li></ul><h1 id="快速生成"><a href="#快速生成" class="headerlink" title="快速生成"></a>快速生成</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">~ $ gem install jekyll<br>~ $ jekyll new myblog<br>~ $ <span class="hljs-built_in">cd</span> myblog<br>~/myblog $ jekyll serve<br><span class="hljs-comment"># =&gt; Now browse to http://localhost:4000</span><br></code></pre></td></tr></table></figure><p>生成后会得到这样的大概的目录结构</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs bash">.     基本信息<br>├── _config.yml<br>├── _drafts<br>|   ├── begin-with-the-crazy-ideas.textile<br>|   └── on-simplicity-in-technology.markdown<br>      包括脚页，头页<br>├── _includes<br>|   ├── footer.html<br>|   └── header.html<br>      布局<br>├── _layouts<br>|   ├── default.html<br>|   └── post.html<br>      文章<br>├── _posts<br>|   ├── 年-月-日-文件名.md<br>├── _site<br>├── .jekyll-metadata<br>      HTML<br>└── index.html<br></code></pre></td></tr></table></figure><blockquote><p>更多查看<a href="http://jekyllcn.com/docs/structure/">jekyll文档-目录结构</a></p></blockquote><h2 id="安装开发板"><a href="#安装开发板" class="headerlink" title="安装开发板"></a>安装开发板</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> git://github.com/jekyll/jekyll.git<br>$ <span class="hljs-built_in">cd</span> jekyll<br>$ script/bootstrap<br>$ bundle <span class="hljs-built_in">exec</span> rake build<br>$ <span class="hljs-built_in">ls</span> pkg/*.gem | <span class="hljs-built_in">head</span> -n 1 | xargs gem install -l<br></code></pre></td></tr></table></figure><h1 id="主题搭建"><a href="#主题搭建" class="headerlink" title="主题搭建"></a>主题搭建</h1><p>jekyll主题在github也有很多开源</p><p>完成了以上的内容你就可以愉快的使用jekyll啦，<a href="https://github.com/LineXic/LineXic.github.io/fork">fork</a>这个主题，并把仓库名称改为<code>usename.github.io</code>就完成啦，就这么简单</p><p>并且jekyll是github的创始人创建的，jekyll内置github pages支持</p><h1 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h1><p>本主题内置<a href="https://github.com/gitalk/gitalk">Gitalk</a><br>可以在<a href="https://github.com/settings/applications/new">这里</a>申请GitHub Application</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">gitalk:<br>   <span class="hljs-built_in">enable</span>: <span class="hljs-literal">true</span><br>   owner: 拥有者<br>   repo: 你的仓库名称<br>   clientID: 申请的ID<br>   clientSecret: key<br>   admin: 管理者<br></code></pre></td></tr></table></figure><blockquote><p>资料引用<br><br><a href="http://jekyllcn.com/docs/quickstart/">jekyll文档</a><br><br><a href="https://docs.github.com/zh/pages/setting-up-a-github-pages-site-with-jekyll">GitHub文档</a><br><br><a href="https://talk.jekyllrb.com/">jekyll论坛</a><br><br><a href="https://github.com/gitalk/gitalk">gitalk</a></p></blockquote><p>另外可以找到<a href="https://zhuanlan.zhihu.com/p/91769762">CNAME</a>文件以绑定域名</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>termux</tag>
-      
-      <tag>静态博客</tag>
-      
-      <tag>jekyll</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>【前端15】替换标签</title>
     <link href="/2024/04/03/2024-04-03-guigu-html-15/"/>
     <url>/2024/04/03/2024-04-03-guigu-html-15/</url>
@@ -481,9 +460,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -502,9 +481,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -523,9 +502,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -544,9 +523,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -586,9 +565,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -607,9 +586,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -628,9 +607,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -649,9 +628,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -670,9 +649,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -691,9 +670,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -712,9 +691,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -752,9 +731,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -773,9 +752,9 @@
     
     <tags>
       
-      <tag>termux</tag>
-      
       <tag>kali</tag>
+      
+      <tag>termux</tag>
       
     </tags>
     
@@ -794,9 +773,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -834,9 +813,9 @@
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
@@ -849,15 +828,15 @@
     <link href="/2023/09/02/2023-9-02-guigu-html-1/"/>
     <url>/2023/09/02/2023-9-02-guigu-html-1/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本教程基于<a href="https://b23.tv/Dr9IiSP" title="尚硅谷Web前端教程">尚硅谷Web前端教程</a>发布，你们也可以理解为这是一篇尚硅谷教程的笔记，当然这里也有我自己的一些经验总结</p></blockquote><h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><ul><li>蒂姆-伯纳斯-李爵士发明了万维网</li><li>1991年8月6日，世界上第一个服务网和网站在欧洲核子研究中心上线</li><li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">点击查看第一个网站</a></li></ul><h1 id="什么是网页"><a href="#什么是网页" class="headerlink" title="什么是网页"></a>什么是网页</h1><p>网页是浏览器通过渲染所呈现的页面，你们看的我这个博客就是一个网页，网页就是你打开网站后浏览器所第一给你呈现的页面</p><p><a href="https://img.linexic.top/file/18bd1c8cda8c982e8f894.jpg" title="示例1"><img src="https://img.linexic.top/file/18bd1c8cda8c982e8f894.jpg" alt="示例1" title="示例1"></a></p><p>这个就是一个网站的页面，在一个页面里我们也可以通过鼠标右键来查看<code>网页源代码</code></p><p><img src="https://img.linexic.top/file/7bce4ee4fb8c6a801a8f7.png" alt="示例1网页源代码" title="示例1网页源代码"></p><p>看，打开后就是这个样子</p><h1 id="万维网联盟的创立（W3C）"><a href="#万维网联盟的创立（W3C）" class="headerlink" title="万维网联盟的创立（W3C）"></a>万维网联盟的创立（W3C）</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p><img src="https://img.linexic.top/file/33492b0d7267c7a0796a5.png" alt="W3C LOGO" title="W3C LOGO"></p><ul><li>早期的浏览器所渲染的网页各不相同，经常会有的时候这个代码在这个浏览器就能成功渲染显示出来，而在另一个浏览器就显示不出来了</li><li>为了解决这个问题，伯纳斯李在<code>1994年</code>创立了W3C来<code>制定一个统一网页编写标准</code>，目前我们所有访问的页面都根据这个标准来写</li><li>W3C在中国也有网站，感兴趣的可以点<a href="https://www.chinaw3c.org/" title="这里">这里</a>访问</li></ul><h1 id="网页的结构"><a href="#网页的结构" class="headerlink" title="网页的结构"></a>网页的结构</h1><p>根据W3C标准，一个网页主要由三部分组成<code>结构，表现，行为</code>分别对应<code>HTML，CSS，JavaScript</code></p><ul><li>HTML<code>用于页面结构</code></li><li>CSS<code>用于控制页面中元素样式</code></li><li>JavaScript<code>用于影响用户操作</code></li></ul><p>这些我有时间了或者下篇博客中都会讲到，现在只是先理解一下这些概念</p><blockquote><p>因为目前还没有评论系统，有问题发邮箱，感谢谅解<br/><a href="mailto:&#x32;&#x37;&#x39;&#x33;&#49;&#x35;&#x31;&#51;&#x37;&#53;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#x32;&#x37;&#x39;&#x33;&#49;&#x35;&#x31;&#51;&#x37;&#53;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>本教程基于<a href="https://b23.tv/Dr9IiSP" title="尚硅谷Web前端教程">尚硅谷Web前端教程</a>发布，你们也可以理解为这是一篇尚硅谷教程的笔记，当然这里也有我自己的一些经验总结</p></blockquote><h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><ul><li>蒂姆-伯纳斯-李爵士发明了万维网</li><li>1991年8月6日，世界上第一个服务网和网站在欧洲核子研究中心上线</li><li><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">点击查看第一个网站</a></li></ul><h1 id="什么是网页"><a href="#什么是网页" class="headerlink" title="什么是网页"></a>什么是网页</h1><p>网页是浏览器通过渲染所呈现的页面，你们看的我这个博客就是一个网页，网页就是你打开网站后浏览器所第一给你呈现的页面</p><p><a href="https://img.linexic.top/file/18bd1c8cda8c982e8f894.jpg" title="示例1"><img src="https://img.linexic.top/file/18bd1c8cda8c982e8f894.jpg" alt="示例1" title="示例1"></a></p><p>这个就是一个网站的页面，在一个页面里我们也可以通过鼠标右键来查看<code>网页源代码</code></p><p><img src="https://img.linexic.top/file/7bce4ee4fb8c6a801a8f7.png" alt="示例1网页源代码" title="示例1网页源代码"></p><p>看，打开后就是这个样子</p><h1 id="万维网联盟的创立（W3C）"><a href="#万维网联盟的创立（W3C）" class="headerlink" title="万维网联盟的创立（W3C）"></a>万维网联盟的创立（W3C）</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p><img src="https://img.linexic.top/file/33492b0d7267c7a0796a5.png" alt="W3C LOGO" title="W3C LOGO"></p><ul><li>早期的浏览器所渲染的网页各不相同，经常会有的时候这个代码在这个浏览器就能成功渲染显示出来，而在另一个浏览器就显示不出来了</li><li>为了解决这个问题，伯纳斯李在<code>1994年</code>创立了W3C来<code>制定一个统一网页编写标准</code>，目前我们所有访问的页面都根据这个标准来写</li><li>W3C在中国也有网站，感兴趣的可以点<a href="https://www.chinaw3c.org/" title="这里">这里</a>访问</li></ul><h1 id="网页的结构"><a href="#网页的结构" class="headerlink" title="网页的结构"></a>网页的结构</h1><p>根据W3C标准，一个网页主要由三部分组成<code>结构，表现，行为</code>分别对应<code>HTML，CSS，JavaScript</code></p><ul><li>HTML<code>用于页面结构</code></li><li>CSS<code>用于控制页面中元素样式</code></li><li>JavaScript<code>用于影响用户操作</code></li></ul><p>这些我有时间了或者下篇博客中都会讲到，现在只是先理解一下这些概念</p><blockquote><p>因为目前还没有评论系统，有问题发邮箱，感谢谅解<br/><a href="mailto:&#x32;&#x37;&#x39;&#x33;&#x31;&#53;&#x31;&#x33;&#x37;&#53;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;">&#x32;&#x37;&#x39;&#x33;&#x31;&#53;&#x31;&#x33;&#x37;&#53;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;</a></p></blockquote>]]></content>
     
     
     
     <tags>
       
-      <tag>HTML</tag>
-      
       <tag>前端</tag>
+      
+      <tag>HTML</tag>
       
     </tags>
     
