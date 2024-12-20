@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LineXic书屋</title>
+  
+  <subtitle>一珊一珊亮晶晶</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-12-20T14:13:18.542Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>LineXic</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Hexo</title>
+    <link href="http://example.com/2024/12/20/hello-world/"/>
+    <id>http://example.com/2024/12/20/hello-world/</id>
+    <published>2024-12-20T10:57:52.000Z</published>
+    <updated>2024-12-20T14:13:18.542Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>欢迎来到Hexo！</p></blockquote><p>博客从Jekyll迁移到Hexo</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;欢迎来到Hexo！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客从Jekyll迁移到Hexo&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
