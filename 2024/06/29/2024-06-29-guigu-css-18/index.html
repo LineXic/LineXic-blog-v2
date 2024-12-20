@@ -1,0 +1,760 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="LineXic">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结   复合选择器复合选择器说白了其实就是一个套着一个，多重使用，但它复合的条件以下标签必须全部满足，下面举例说明 12&lt;div class&#x3D;&quot;red&quot;&gt;我是红色div&lt;&#x2F;div&gt;&lt;p class&#x3D;&quot;red&quot;&gt;我是红">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【前端18】复合选择器和关系选择器">
+<meta property="og:url" content="http://example.com/2024/06/29/2024-06-29-guigu-css-18/index.html">
+<meta property="og:site_name" content="LineXic书屋">
+<meta property="og:description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结   复合选择器复合选择器说白了其实就是一个套着一个，多重使用，但它复合的条件以下标签必须全部满足，下面举例说明 12&lt;div class&#x3D;&quot;red&quot;&gt;我是红色div&lt;&#x2F;div&gt;&lt;p class&#x3D;&quot;red&quot;&gt;我是红">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s21.ax1x.com/2024/06/29/pkcAbDJ.png">
+<meta property="og:image" content="https://s21.ax1x.com/2024/06/30/pkcmy0e.jpg">
+<meta property="article:published_time" content="2024-06-28T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-20T15:55:29.346Z">
+<meta property="article:author" content="LineXic">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="CSS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s21.ax1x.com/2024/06/29/pkcAbDJ.png">
+  
+  
+  
+  <title>【前端18】复合选择器和关系选择器 - LineXic书屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"✨","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"9ecfed90ae982b01f0b7cb1770447760","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2023-019-23","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="LineXic书屋" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>LineXic书屋</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="【前端18】复合选择器和关系选择器"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        LineXic
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-06-29 00:00" pubdate>
+          2024年6月29日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">【前端18】复合选择器和关系选择器</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>本文基于<a target="_blank" rel="noopener" href="https://b23.tv/Wky0XJk">尚硅谷Web前端基础</a>教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结</p>
+</blockquote>
+<p><img src="https://s21.ax1x.com/2024/06/29/pkcAbDJ.png" srcset="/img/loading.gif" lazyload alt="18"></p>
+<h1 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h1><p>复合选择器说白了其实就是一个套着一个，多重使用，但它复合的条件以下标签必须全部满足，下面举例说明</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;red&quot;</span>&gt;</span>我是红色div<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;red&quot;</span>&gt;</span>我是红色p<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>现在如果我们想把<code>class</code>设置成红色这已经难不了我们来，我们直接</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.red</span>&#123;<br>   <span class="hljs-attribute">color</span>: red ;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>可是我们如果想要把<code>div</code>的字体调成<code>30px</code>呢？在<code>red</code>那一行写吗？显然不行，因为这里有两个标签的class是<code>red</code>，在<code>red</code>里写会使两个标签都变成红色，可我们的要求是一个<code>div</code>标签变成红色就好，那应该怎么办呢</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.red</span>&#123;<br>   <span class="hljs-attribute">color</span>: red ;<br>   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>这样<code>div</code>标签就即是红色，又是<code>30px</code>啦，想要p标签不被影响就可以单独把它列出来，保留上一个CSS</p>
+<p>这样的选择器又可以叫<code>交集选择器</code></p>
+<ul>
+<li>作用:选中同时符合多个条件的标签</li>
+<li>语法:选择器1选择器2选择器n{}</li>
+<li>要注意的是如果选择器中有标签元素，必须要以标签开头，如上就是<code>div</code>在前头，.选择器在后头</li>
+</ul>
+<p>复合选择器里又分了<code>并集选择器</code></p>
+<p>并集选择器相比交集选择器要求稍微松一点，因为你只要满足选择器中的其中一项要求就可以了，例如</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">div</span> class=&quot;red&quot;&gt;我是<span class="hljs-selector-tag">div</span>&lt;/<span class="hljs-selector-tag">div</span>&gt;<br>&lt;<span class="hljs-selector-tag">p</span> class=&quot;red&quot;&gt;我是<span class="hljs-selector-tag">p</span>&lt;/<span class="hljs-selector-tag">p</span>&gt;<br>&lt;style&gt;<br> <span class="hljs-selector-tag">div</span>, <span class="hljs-selector-class">.red</span>&#123;<br>    <span class="hljs-attribute">color</span>: red;<br>    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;   <br>  &#125;  <br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
+<p>如果按照交集选择器就只会让第一行的<code>div</code>变成红色，因为它满足选择器中的条件，又有<code>div</code>有时<code>red</code>的<code>class</code></p>
+<p>但你们看出来没有，这里的两个元素中间有空格并且有<code>,</code>隔开，这就是并集选择器的语法，作用就是让不是<code>div</code>的元素，只要你满足了<code>red</code>这一点就一律帮你完成字体和颜色的设置</p>
+<p>并集选择器只需要符合一点要求就可以了，所以<code>div</code>的<code>p</code>元素都能得到设置而交集选择器需要完成两个，这里的<code>,</code>代表“或，或者”</p>
+<h1 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h1><p><img src="https://s21.ax1x.com/2024/06/30/pkcmy0e.jpg" srcset="/img/loading.gif" lazyload alt="关系选择器"></p>
+<p>在正式开始之前，还需要认识几个概念</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs html"><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br><br>我是一个div<br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是div元素里的p元素<br><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>我是p元素里的span元素<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">sapn</span>&gt;</span>我是div中的<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>在这个里面，各标签和各之前是环环相扣包括的，其中包括</p>
+<ul>
+<li>父元素<ul>
+<li>直接包含子元素的元素叫子元素</li>
+</ul>
+</li>
+<li>子元素<ul>
+<li>直接被父元素包含的元素</li>
+</ul>
+</li>
+<li>祖先元素<ul>
+<li>直接或间接包含后代元素的元素</li>
+<li>一个元素的父元素都可以称是祖先元素</li>
+</ul>
+</li>
+<li>后代元素<ul>
+<li>直接或间接被祖先元素包含的元素</li>
+<li>子元素同时也可以说是后代元素</li>
+</ul>
+</li>
+<li>兄弟元素<ul>
+<li>拥有相同父元素的元素</li>
+</ul>
+</li>
+</ul>
+<p>综上我们把刚才那段代码写上注释方便理解，方便区分我把两个<code>span</code>标上序号.1和.2</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-comment">&lt;!-- div就是一个祖先元素，它包括了这里面的所有元素 --&gt;</span><br>我是一个div<br><span class="hljs-comment">&lt;!-- p元素是.1元素的父元素或者说祖先元素因为它包括着span.1 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是div元素里的p元素<br><span class="hljs-comment">&lt;!-- 它的辈分就相对小了，他是div的后代元素，是p的子元素 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">span.1</span>&gt;</span>我是p元素里的span元素<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-comment">&lt;!-- 它和p标签是兄弟关系，拥有相同的父元素--div --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">sapn.2</span>&gt;</span>我是div中的<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3><ul>
+<li>选中指定父元素下的子元素</li>
+<li>父元素 &gt; 子元素{}</li>
+</ul>
+<p>理解了这个接下来就好说了，如果有一个要求，需要在下面的代码框里添加代码，使它实现让.2变成红色我们需要</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs html"><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br><br>我是一个div<br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是div元素里的p元素<br><span class="hljs-tag">&lt;<span class="hljs-name">span.1</span>&gt;</span>我是p元素里的span元素<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">sapn.2</span>&gt;</span>我是div中的span<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">  <span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">span</span>&#123;</span><br><span class="language-css">       <span class="hljs-attribute">color</span>:red ;</span><br><span class="language-css">&#125;</span><br><span class="language-css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>这个的意思是直接选中div内的直接span，也就是span.2定义为红色</p>
+<p>也可以复合使用</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &gt; <span class="hljs-selector-tag">p</span> &gt; <span class="hljs-selector-tag">span</span>&#123;<br>     <span class="hljs-attribute">color</span>: red;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>这样就只想<code>p</code>元素里的<code>span</code>，相当于文件的路径了</p>
+<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><ul>
+<li>选中指定元素内指定后代元素</li>
+<li>祖先 后代</li>
+</ul>
+<p>这次我不让.2变色了，我想让.1变色，首先先想想.1和谁有关系–div，div在其中是.1的祖先，我们可以用后代选择器</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br><br>我是一个div<br><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是div元素里的p元素<br><span class="hljs-tag">&lt;<span class="hljs-name">span.1</span>&gt;</span>我是p元素里的span元素<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">sapn.2</span>&gt;</span>我是div中的<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">   <span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">span</span>&#123;</span><br><span class="language-css">      <span class="hljs-attribute">color</span>:red;</span><br><span class="language-css">  &#125;</span><br><span class="language-css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>也就是说省略大于号了，直接空格</p>
+<h3 id="选择下一个兄弟"><a href="#选择下一个兄弟" class="headerlink" title="选择下一个兄弟"></a>选择下一个兄弟</h3><ul>
+<li>前一个 + 下一个</li>
+<li>兄 ~ 弟</li>
+</ul>
+<p>改变一个样式的话就是<code>+</code>，之间所有的话呢就是<code>~</code>相接</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF/" class="print-no-link">#前端</a>
+      
+        <a href="/tags/CSS/" class="print-no-link">#CSS</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>【前端18】复合选择器和关系选择器</div>
+      <div>http://example.com/2024/06/29/2024-06-29-guigu-css-18/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>LineXic</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年6月29日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/07/03/2024-07-03-guigu-css-19/" title="【前端19】属性选择器和伪类选择器">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">【前端19】属性选择器和伪类选择器</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/06/25/2024-06-25-guigu-css-17/" title="【前端17】CSS的基本语法和常用选择器">
+                        <span class="hidden-mobile">【前端17】CSS的基本语法和常用选择器</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://talk.linexic.top/","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <br> Power by <a href="/">LineXic</a> | 站点<a href="/feed.xml">RSS</a> <br> <a target="_blank" rel="noopener" href="https://juejin.cn/user/917459279025964"> <img width="25" src="/img/logo/juejin.svg" srcset="/img/loading.gif" lazyloadalt="掘金"  /> </a> || <a target="_blank" rel="noopener" href="https://space.bilibili.com/1015205011"> <img width="25" src="/img/logo/bilibili.svg" srcset="/img/loading.gif" lazyloadalt="bilibili"  /> </a> || <a href="mailto:linexic@yeah.net"> <img width="25" src="/img/logo/email.svg" srcset="/img/loading.gif" lazyloadalt="邮箱"  /> </a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
