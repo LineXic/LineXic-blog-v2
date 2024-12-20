@@ -17,23 +17,23 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="LineXic">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="LineXic,linexic,blog,web,博客,前端,学习进步,书屋,基于huxpro主题搭建">
   
     <meta name="description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结      名称 优先级(好记版) 优先级(标准版)    内联样式 1000 1,0,0,0   ID选择器 #id{} 100 0,1,0,0   类和伪类选择器 .class{},:hover 10 0,0,1,0   元素选择器 p{} 1 0,0,0,1   通配选择器 * 0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【前端22】优先级">
-<meta property="og:url" content="http://example.com/2024/09/01/2024-09-01-guigu-css-22/index.html">
+<meta property="og:url" content="https://linexic.top/2024/09/01/2024-09-01-guigu-css-22/index.html">
 <meta property="og:site_name" content="LineXic书屋">
 <meta property="og:description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结      名称 优先级(好记版) 优先级(标准版)    内联样式 1000 1,0,0,0   ID选择器 #id{} 100 0,1,0,0   类和伪类选择器 .class{},:hover 10 0,0,1,0   元素选择器 p{} 1 0,0,0,1   通配选择器 * 0">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/css.png">
+<meta property="og:image" content="https://linexic.top/img/css.png">
 <meta property="article:published_time" content="2024-09-01T15:33:00.000Z">
 <meta property="article:modified_time" content="2024-12-20T16:45:45.102Z">
 <meta property="article:author" content="LineXic">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/css.png">
+<meta name="twitter:image" content="https://linexic.top/img/css.png">
   
   
   
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"✨","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"9ecfed90ae982b01f0b7cb1770447760","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2023-019-23","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"linexic.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"✨","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"9ecfed90ae982b01f0b7cb1770447760","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2023-019-23","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -341,7 +341,7 @@
 </tr>
 </tbody></table>
 <p>这里先把样式等优先级列出来方便记忆和查看理解</p>
-<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><h2 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h2><p>内联样式是网页中最高的优先级但是我们也最好不要使用<a target="_blank" rel="noopener" href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F">内联样式</a>因为内联样式是不如<a target="_blank" rel="noopener" href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8">内部样式</a>和<a target="_blank" rel="noopener" href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8">外部样式</a>好用的，其一是因为网页内容多了想要定义多个样式就得一行一行写内联很麻烦，其二就是它级别太高了，你如果想要在内联的基础上修改某一部分样式就会因为内联的级别太高而无法正常生效</p>
+<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><h2 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h2><p>内联样式是网页中最高的优先级但是我们也最好不要使用<a href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F">内联样式</a>因为内联样式是不如<a href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8">内部样式</a>和<a href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E8%A1%A8">外部样式</a>好用的，其一是因为网页内容多了想要定义多个样式就得一行一行写内联很麻烦，其二就是它级别太高了，你如果想要在内联的基础上修改某一部分样式就会因为内联的级别太高而无法正常生效</p>
 <p>对比一下：可以复制下来自己对比</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color:red&quot;</span>&gt;</span>LineXic!!!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br><span class="hljs-comment">&lt;!-- 这是内联样式 --&gt;</span><br></code></pre></td></tr></table></figure>
 
@@ -349,8 +349,8 @@
 
 <p>两种都定义了文段LineXic！！！的颜色，与之不同的是高优先级的「内联样式」定义的是红色而「内部样式」则是蓝色思考一下，字段会变成蓝色还是红色的？<br><img src="https://s21.ax1x.com/2024/09/11/pAnEj9U.png" srcset="/img/loading.gif" lazyload alt="优先级"><br>这就是优先级的好处–比别人更快显示样式并覆盖</p>
 <h2 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h2><p><code>*</code> 称为<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Universal_selectors">通配选择器</a>可以是全文的文段标签都应用上这种效果，<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Heading_Elements">h1标签</a>也好，<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p">p标签</a>也好全部定义成一个样子的可以任意支配任何选择器。听上去功能强大，但是不推荐使用</p>
-<h2 id="继承选择器"><a href="#继承选择器" class="headerlink" title="继承选择器"></a>继承选择器</h2><p>在<a target="_blank" rel="noopener" href="https://linexic.top/2024/08/13/guigu-css-21/">继承</a>中，虽然子标签继承了父标签的属性但不继承它的权重(类似于地位)</p>
-<h1 id="如何比较优先级"><a href="#如何比较优先级" class="headerlink" title="如何比较优先级"></a>如何比较优先级</h1><p>比较优先级时，可以将所有的优先级相加计算，优先级越高则优先显示这个和<a target="_blank" rel="noopener" href="https://linexic.top/2024/09/01/guigu-css-22/#%E7%90%86%E8%A7%A3">理解</a>一段说的差不多</p>
+<h2 id="继承选择器"><a href="#继承选择器" class="headerlink" title="继承选择器"></a>继承选择器</h2><p>在<a href="https://linexic.top/2024/08/13/guigu-css-21/">继承</a>中，虽然子标签继承了父标签的属性但不继承它的权重(类似于地位)</p>
+<h1 id="如何比较优先级"><a href="#如何比较优先级" class="headerlink" title="如何比较优先级"></a>如何比较优先级</h1><p>比较优先级时，可以将所有的优先级相加计算，优先级越高则优先显示这个和<a href="https://linexic.top/2024/09/01/guigu-css-22/#%E7%90%86%E8%A7%A3">理解</a>一段说的差不多</p>
 <p>但他们之间是不会相互「越界」的，比如ID选择器相加在高也是不会超过内联样式的选择器的</p>
 <h1 id="important"><a href="#important" class="headerlink" title="!important"></a>!important</h1><p>在外联样式中用<a target="_blank" rel="noopener" href="https://www.runoob.com/css/css-important.html">!important</a>规则大概是这样的</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> &#123;<br>  <span class="hljs-attribute">background-color</span>: red <span class="hljs-meta">!important</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -383,7 +383,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>【前端22】优先级</div>
-      <div>http://example.com/2024/09/01/2024-09-01-guigu-css-22/</div>
+      <div>https://linexic.top/2024/09/01/2024-09-01-guigu-css-22/</div>
     </div>
     <div class="license-meta">
       

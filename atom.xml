@@ -3,11 +3,11 @@
   <title>LineXic书屋</title>
   
   <subtitle>一珊一珊亮晶晶</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://linexic.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://linexic.top/"/>
   <updated>2024-12-20T15:58:21.522Z</updated>
-  <id>http://example.com/</id>
+  <id>https://linexic.top/</id>
   
   <author>
     <name>LineXic</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello Hexo</title>
-    <link href="http://example.com/2024/12/20/hello-world/"/>
-    <id>http://example.com/2024/12/20/hello-world/</id>
+    <link href="https://linexic.top/2024/12/20/hello-world/"/>
+    <id>https://linexic.top/2024/12/20/hello-world/</id>
     <published>2024-12-20T10:57:52.000Z</published>
     <updated>2024-12-20T15:58:21.522Z</updated>
     
@@ -38,7 +38,7 @@
     
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://linexic.top/tags/Hexo/"/>
     
   </entry>
   

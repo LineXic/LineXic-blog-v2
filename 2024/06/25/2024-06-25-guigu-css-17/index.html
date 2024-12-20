@@ -17,23 +17,23 @@
   
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="LineXic">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="LineXic,linexic,blog,web,博客,前端,学习进步,书屋,基于huxpro主题搭建">
   
     <meta name="description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结   基本语法首先讲一下CSS的基本语法中的注释，之前也讲过注释的作用是方便维护或解释代码，符号为&#x2F;*结束符号是*&#x2F;注释中的内容会被浏览器忽略 值得注意的是这样的注释只能在CSS中使用，如果你使用了内联样式就只能在&lt;style&gt;使用，不能再HTML中使用，HTML的注释是&amp;lt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【前端17】CSS的基本语法和常用选择器">
-<meta property="og:url" content="http://example.com/2024/06/25/2024-06-25-guigu-css-17/index.html">
+<meta property="og:url" content="https://linexic.top/2024/06/25/2024-06-25-guigu-css-17/index.html">
 <meta property="og:site_name" content="LineXic书屋">
 <meta property="og:description" content="前言 本文基于尚硅谷Web前端基础教程发布，你也可以理解成这是一篇尚硅谷教程笔记，当然这里也有我的一些经验总结   基本语法首先讲一下CSS的基本语法中的注释，之前也讲过注释的作用是方便维护或解释代码，符号为&#x2F;*结束符号是*&#x2F;注释中的内容会被浏览器忽略 值得注意的是这样的注释只能在CSS中使用，如果你使用了内联样式就只能在&lt;style&gt;使用，不能再HTML中使用，HTML的注释是&amp;lt">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/css.png">
+<meta property="og:image" content="https://linexic.top/img/css.png">
 <meta property="article:published_time" content="2024-06-24T16:00:00.000Z">
 <meta property="article:modified_time" content="2024-12-20T16:31:42.506Z">
 <meta property="article:author" content="LineXic">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/css.png">
+<meta name="twitter:image" content="https://linexic.top/img/css.png">
   
   
   
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"✨","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"9ecfed90ae982b01f0b7cb1770447760","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2023-019-23","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"linexic.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"✨","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"9ecfed90ae982b01f0b7cb1770447760","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2023-019-23","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -302,13 +302,13 @@
 </blockquote>
 <p><img src="https://blog.linexic.top//img/blog/css-17.png" srcset="/img/loading.gif" lazyload alt="CSS-17"></p>
 <h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><p>首先讲一下CSS的基本语法中的<code>注释</code>，之前也讲过注释的作用是方便维护或解释代码，符号为<code>/*</code>结束符号是<code>*/</code>注释中的内容会被浏览器忽略</p>
-<p>值得注意的是这样的注释只能在CSS中使用，如果你使用了<a target="_blank" rel="noopener" href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F">内联样式</a>就只能在<code>&lt;style&gt;</code>使用，不能再HTML中使用，HTML的注释是<code>&lt;!--  --&gt;</code></p>
+<p>值得注意的是这样的注释只能在CSS中使用，如果你使用了<a href="https://linexic.top/2024/06/08/guigu-css-16/#%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F">内联样式</a>就只能在<code>&lt;style&gt;</code>使用，不能再HTML中使用，HTML的注释是<code>&lt;!--  --&gt;</code></p>
 <h2 id="选择器or声明块"><a href="#选择器or声明块" class="headerlink" title="选择器or声明块"></a>选择器or声明块</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;boby&gt;<br>&lt;<span class="hljs-selector-tag">p</span>&gt;LineXic!!!&lt;/<span class="hljs-selector-tag">p</span>&gt;<br><br>&lt;style&gt;<br><span class="hljs-selector-tag">p</span>&#123; <br>  <span class="hljs-attribute">color</span>: red;<br>&#125;<br>&lt;/style&gt;<br>&lt;/boby&gt;<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>先看一个代码例，方便我们更好解读</p>
 </blockquote>
 <p>其中<code>style</code>中的<code>p</code>元素就是一个选择器，它的作用选择上方的<code>&lt;p&gt;</code>标签，并定义其样式</p>
-<p><code>&#123;&#125;</code>里的东西就是声明块了，声明块顾名思义就是通过声明丁一其中的样式元素，其结构是<a target="_blank" rel="noopener" href="https://linexic.top/2024/01/30/guigu-html-5/">名值对结构</a>，即<code>:</code>连接以<code>;</code>结尾（英文），其中<em><strong>最后</strong></em>一个值得<code>;</code>是可以省略的，效果都大差不差</p>
+<p><code>&#123;&#125;</code>里的东西就是声明块了，声明块顾名思义就是通过声明丁一其中的样式元素，其结构是<a href="https://linexic.top/2024/01/30/guigu-html-5/">名值对结构</a>，即<code>:</code>连接以<code>;</code>结尾（英文），其中<em><strong>最后</strong></em>一个值得<code>;</code>是可以省略的，效果都大差不差</p>
 <h1 id="常用选择器"><a href="#常用选择器" class="headerlink" title="常用选择器"></a>常用选择器</h1><blockquote>
 <p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors">CSS选择器</a></p>
 </blockquote>
@@ -357,7 +357,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>【前端17】CSS的基本语法和常用选择器</div>
-      <div>http://example.com/2024/06/25/2024-06-25-guigu-css-17/</div>
+      <div>https://linexic.top/2024/06/25/2024-06-25-guigu-css-17/</div>
     </div>
     <div class="license-meta">
       
