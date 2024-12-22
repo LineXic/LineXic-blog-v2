@@ -5,56 +5,48 @@
         <link>https://linexic.top</link>
         <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 22 Sep 2023 21:28:00 +0800</pubDate>
-        <lastBuildDate>Fri, 22 Sep 2023 21:28:00 +0800</lastBuildDate>
+        <pubDate>Sun, 22 Dec 2024 21:28:00 +0800</pubDate>
+        <lastBuildDate>Sun, 22 Dec 2024 21:28:00 +0800</lastBuildDate>
         <category>百度统计</category>
-        <category>碎碎念</category>
         <category>杂谈</category>
+        <category>碎碎念</category>
         <category>博客</category>
+        <category>GitHub</category>
         <category>Discuz!Q</category>
         <category>宝塔</category>
-        <category>GitHub</category>
         <category>CSS</category>
         <category>前端</category>
         <category>HTML</category>
-        <category>Hexo</category>
         <category>浏览器</category>
+        <category>Hexo</category>
         <category>月记</category>
         <category>kali</category>
         <category>termux</category>
         <category>作文</category>
         <item>
-            <guid isPermalink="true">https://linexic.top/2023/09/22/github-1/</guid>
-            <title>GitHub上有趣/实用的项目</title>
-            <link>https://linexic.top/2023/09/22/github-1/</link>
+            <guid isPermalink="true">https://linexic.top/2024/12/22/github-star-and-project/</guid>
+            <title>你曾经star学习的项目现在能看懂了吗？</title>
+            <link>https://linexic.top/2024/12/22/github-star-and-project/</link>
             <category>GitHub</category>
-            <pubDate>Fri, 22 Sep 2023 21:28:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;GitHub是个非常有用的东西，里面不仅有程序员分享的代码还有一些好玩的东西，甚至不学计算机的人也可以用到&lt;/p&gt;
+            <pubDate>Sun, 22 Dec 2024 21:28:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我有随时翻看GitHub Star的习惯，尤其是下载了GitHub App后更加方便我查看了，后来我偶然翻到了自己曾经折腾过的项目&lt;a href=&#34;https://github.com/MorFansLab/LiteWebChat_Frame&#34;&gt;LiteWebChat_Frame&lt;/a&gt;看了看文档忽然一个问题映入了我的脑海&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;进入正文&lt;/p&gt;
+&lt;p&gt;自己曾经因为没看懂而star的项目现在看懂了吗&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;1-程序员做饭指南&#34;&gt;&lt;a href=&#34;#1-程序员做饭指南&#34; class=&#34;headerlink&#34; title=&#34;1.程序员做饭指南&#34;&gt;&lt;/a&gt;1.程序员做饭指南&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/836153eafed43d47a1679.png&#34; alt=&#34;程序员做饭指南GitHub&#34; title=&#34;程序员做饭指南GitHub&#34;&gt;&lt;br&gt;里面记录了厨房准备等一些东西，所以是真的从头开始讲了。嗯~真的就很细&lt;br/&gt;&lt;br&gt;时间甚至精细到秒&lt;br&gt;&lt;img src=&#34;https://img.linexic.top/file/c536142b38898e31de057.png&#34; alt=&#34;拔丝土豆&#34; title=&#34;拔丝土豆&#34;&gt;&lt;br&gt;GitHub:&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.com/Anduin2017/HowToCook&#34; title=&#34;https://github.com/Anduin2017/HowToCook&#34;&gt;https://github.com/Anduin2017/HowToCook&lt;/a&gt;&lt;br/&gt;&lt;br&gt;在线:&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://cook.aiursoft.cn/&#34;&gt;https://cook.aiursoft.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;2-最全中华古诗词数据库&#34;&gt;&lt;a href=&#34;#2-最全中华古诗词数据库&#34; class=&#34;headerlink&#34; title=&#34;2.最全中华古诗词数据库&#34;&gt;&lt;/a&gt;2.最全中华古诗词数据库&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/a812531de1a282c8c857a.png&#34; alt=&#34;最全中华古诗词数据库&#34; title=&#34;最全中华古诗词数据库&#34;&gt;&lt;/p&gt;
-&lt;p&gt;记录了从唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://avatars3.githubusercontent.com/u/30764933?s=200&amp;v=4&#34; alt=&#34;中国诗词&#34; title=&#34;中国诗词&#34;&gt;&lt;/p&gt;
-&lt;p&gt;诗词通过JSON格式开发，更加方便数据使用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/3fd5e0be41bae12ef3c11.png&#34; alt=&#34;论语&#34; title=&#34;论语&#34;&gt;&lt;/p&gt;
-&lt;p&gt;GitHub：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.com/chinese-poetry/chinese-poetry&#34; title=&#34;https://github.com/chinese-poetry/chinese-poetry&#34;&gt;https://github.com/chinese-poetry/chinese-poetry&lt;/a&gt;&lt;br/&gt;&lt;br&gt;在线：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;http://shici.store/&#34; title=&#34;http://shici.store/&#34;&gt;http://shici.store/&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3-不止于-CSS&#34;&gt;&lt;a href=&#34;#3-不止于-CSS&#34; class=&#34;headerlink&#34; title=&#34;3.不止于 CSS&#34;&gt;&lt;/a&gt;3.不止于 CSS&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/607b39e49e2463f16744a.png&#34; alt=&#34;不止于 CSS &#34; title=&#34;不止于 CSS &#34;&gt;&lt;/p&gt;
-&lt;p&gt;CSS 奇技淫巧，在这里，都有。&lt;/p&gt;
-&lt;p&gt;本 Repo 围绕 CSS&amp;#x2F;Web动画 展开，谈一些有趣的话题，内容天马行空，想到什么说什么，不仅是为了拓宽解决问题的思路，更涉及一些容易忽视或是十分有趣的 CSS 细节。&lt;/p&gt;
-&lt;p&gt;我的一些灵感也是从这里来的&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/c94735a24218532baf05a.png&#34; alt=&#34;内容&#34; title=&#34;内容&#34;&gt;&lt;/p&gt;
-&lt;p&gt;他的内容同步到他&lt;a href=&#34;http://www.cnblogs.com/coco1s/&#34; title=&#34;博客&#34;&gt;博客&lt;/a&gt;和&lt;a href=&#34;https://github.com/chokcoco/iCSS/issues&#34; title=&#34;issues&#34;&gt;issues&lt;/a&gt;&lt;br/&gt;&lt;br&gt;内容可以自己探索&lt;br/&gt;&lt;br&gt;GitHub：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.com/chokcoco/iCSS&#34; title=&#34;https://github.com/chokcoco/iCSS&#34;&gt;https://github.com/chokcoco/iCSS&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;4-网页小组件版本的石蒜模拟器&#34;&gt;&lt;a href=&#34;#4-网页小组件版本的石蒜模拟器&#34; class=&#34;headerlink&#34; title=&#34;4.网页小组件版本的石蒜模拟器&#34;&gt;&lt;/a&gt;4.网页小组件版本的石蒜模拟器&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/184a478ad146158a32873.png&#34; alt=&#34;网页小组件版本的石蒜模拟器&#34; title=&#34;网页小组件版本的石蒜模拟器&#34;&gt;&lt;/p&gt;
-&lt;p&gt;引入模块就可以使用&lt;/p&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;code class=&#34;hljs javascript&#34;&gt;&amp;lt;!-- &lt;span class=&#34;hljs-attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;hljs-comment&#34;&gt;//cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css --&amp;gt;&lt;/span&gt;&lt;br&gt;&amp;lt;!-- &lt;span class=&#34;hljs-attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;hljs-comment&#34;&gt;//cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js --&amp;gt;&lt;/span&gt;&lt;br&gt;&amp;lt;!-- &lt;span class=&#34;hljs-attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;hljs-comment&#34;&gt;//cdnjs.cloudflare.com/ajax/libs/sakana-widget/2.5.0/sakana.min.css --&amp;gt;&lt;/span&gt;&lt;br&gt;&amp;lt;!-- &lt;span class=&#34;hljs-attr&#34;&gt;https&lt;/span&gt;:&lt;span class=&#34;hljs-comment&#34;&gt;//cdnjs.cloudflare.com/ajax/libs/sakana-widget/2.5.0/sakana.min.js --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;link&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;rel&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;  &lt;span class=&#34;hljs-attr&#34;&gt;href&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&lt;span class=&#34;language-xml&#34;&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;language-xml&#34;&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;&lt;span class=&#34;hljs-name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;hljs-attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;hljs-string&#34;&gt;&amp;quot;sakana-widget&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;hljs-tag&#34;&gt;&amp;lt;/&lt;span class=&#34;hljs-name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&amp;lt;script＞&lt;br&gt;  function initSakanaWidget() &amp;#123;&lt;br&gt;    new SakanaWidget().mount(&amp;#x27;#sakana-widget&amp;#x27;);&lt;br&gt;  &amp;#125;&lt;br&gt;&amp;lt;/script＞&lt;br&gt;&amp;lt;script&lt;br&gt;  async&lt;br&gt;  onload=&amp;quot;initSakanaWidget()&amp;quot;&lt;br&gt;  src=&amp;quot;https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js&amp;quot;&lt;br&gt;&amp;gt;&amp;lt;/script＞&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;预览&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/b6ed221fb42c08741bfa6.png&#34; alt=&#34;预览&#34; title=&#34;预览&#34;&gt;&lt;br&gt;GitHub：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.com/dsrkafuu/sakana-widget/blob/main/README.zh.md&#34;&gt;https://github.com/dsrkafuu/sakana-widget/blob/main/README.zh.md&lt;/a&gt;&lt;br/&gt;&lt;br&gt;在线：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.dsrkafuu.net/sakana-widget/&#34;&gt;https://github.dsrkafuu.net/sakana-widget/&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;5-程序员工作中常见的英语词汇&#34;&gt;&lt;a href=&#34;#5-程序员工作中常见的英语词汇&#34; class=&#34;headerlink&#34; title=&#34;5.程序员工作中常见的英语词汇&#34;&gt;&lt;/a&gt;5.程序员工作中常见的英语词汇&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/2e647580ae9f92df598ac.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;其实这个我感觉我们这样的学生也可以用得到的，把它当一个学习英语资料卡就好&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/db4721895ba8271f04e3b.png&#34;&gt;&lt;br&gt;GitHub：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://github.com/Wei-Xia/most-frequent-technology-english-words&#34;&gt;https://github.com/Wei-Xia/most-frequent-technology-english-words&lt;/a&gt;&lt;br/&gt;&lt;br&gt;在线：&lt;br/&gt;&lt;br&gt;&lt;a href=&#34;https://learn-english.dev/&#34;&gt;https://learn-english.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这也是我写文的缘由且也想和大家聊聊这件事&lt;/p&gt;
+&lt;h1 id=&#34;三个阶段&#34;&gt;&lt;a href=&#34;#三个阶段&#34; class=&#34;headerlink&#34; title=&#34;三个阶段&#34;&gt;&lt;/a&gt;三个阶段&lt;/h1&gt;&lt;p&gt;我又重新看了一遍我的Star，发现可分为三个阶段&lt;br&gt;1.Minecraft及相关启动器&lt;br&gt;2.命令行及后端&lt;br&gt;3.前端及各种学习书籍&lt;/p&gt;
+&lt;h2 id=&#34;Minecraft&#34;&gt;&lt;a href=&#34;#Minecraft&#34; class=&#34;headerlink&#34; title=&#34;Minecraft&#34;&gt;&lt;/a&gt;Minecraft&lt;/h2&gt;&lt;p&gt;最开始注册GitHub一是因为Minecraft的插件等开源在这里，还有就是那时候已经对编程产生点兴趣了，想要在这里学习但还是以Minecraft为主了&lt;/p&gt;
+&lt;h2 id=&#34;命令行&#34;&gt;&lt;a href=&#34;#命令行&#34; class=&#34;headerlink&#34; title=&#34;命令行&#34;&gt;&lt;/a&gt;命令行&lt;/h2&gt;&lt;p&gt;这个就和Linux有点关系了，Star过一个现在也很知名的Thefuck，说是输入命令&lt;code&gt;fuck&lt;/code&gt;就能帮你指出你输入错误的命令行，对一些记不住的命令小白还是挺友好的，不过到现在我也没成功安装上这一&lt;code&gt;神器&lt;/code&gt;知道我已经能熟练记住命令行…&lt;/p&gt;
+&lt;p&gt;关于后端就是Java了，严格上说我的第一语言是Java但后来也没学成就走向了更容易直观看到自己成果的前端了。但在这一期间也跟风Star了一些现在看来没用当时看来成宝的仓库，但这些仓库有一个共同点，就是上传一堆image和ppt到仓库里，现在想来也不知道他们想要干什么，好不容易有个在线阅读的网址吧打开后还是无法访问，现在才知道&lt;a href=&#34;https://javaguide.cn/&#34;&gt;JavaGuide&lt;/a&gt;有多香&lt;/p&gt;
+&lt;h2 id=&#34;前端&#34;&gt;&lt;a href=&#34;#前端&#34; class=&#34;headerlink&#34; title=&#34;前端&#34;&gt;&lt;/a&gt;前端&lt;/h2&gt;&lt;p&gt;看前端的时候就知道要注重阅读和实践了&lt;a href=&#34;https://web.qianguyihao.com/&#34;&gt;千古前端&lt;/a&gt;还有&lt;a href=&#34;https://code.yupi.icu/&#34;&gt;鱼皮编程宝典&lt;/a&gt;都是那个时候的东西甚至在前端的路上要越走越远，这个时候就是看的在线教程了，也想过购买实体书籍什么的，但一直没有&lt;/p&gt;
+&lt;p&gt;后面就是这框架那框架，这轮子那轮子的，比如&lt;a href=&#34;https://github.com/vuejs/core&#34;&gt;Vue&lt;/a&gt;尽管我尝试去阅读他的源码也没阅读出个所以然&lt;/p&gt;
+&lt;p&gt;而后感觉自己学习差不多了，三件套已经都涉猎一些后就开始搞建站，后面才发现我太天真了，因为一些Vue和nuxt搭建的博客我看不懂他的源码！！尽管那些样式很炫酷我很喜欢但到我这里我是不知道从哪里下手修改的，后来还好点，弄折腾出一个所以然来了&lt;/p&gt;
+&lt;h1 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h1&gt;&lt;p&gt;感觉聊着这么多都跑题了，现在回归标题，我的答案是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;看懂了，但只看懂了一小部分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;加上也有一些其他新奇的如996.ICU，HelloGitHub这些也很不错的项目我也都有Star也有一些算法正在学习&lt;/p&gt;
+&lt;p&gt;最后我认为挺重要的一点:如果一年来你之前的疑惑没有解答那就不能称作是真正的学习，学习总是要知道更多的&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
