@@ -437,6 +437,20 @@
   </url>
   
   <url>
+    <loc>https://linexic.top/tags/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://linexic.top/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://linexic.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -459,20 +473,6 @@
   
   <url>
     <loc>https://linexic.top/tags/GitHub/</loc>
-    <lastmod>2025-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://linexic.top/tags/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2025-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://linexic.top/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -600,14 +600,14 @@
   </url>
   
   <url>
-    <loc>https://linexic.top/categories/%E6%9D%82%E8%B0%88/</loc>
+    <loc>https://linexic.top/categories/Termux/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://linexic.top/categories/Termux/</loc>
+    <loc>https://linexic.top/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
