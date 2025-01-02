@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "LineXic书屋 • All posts by \"开源\" category",
+    "description": "LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建",
+    "home_page_url": "https://linexic.top",
+    "items": [
+        {
+            "id": "https://linexic.top/2024/07/11/ladybird/",
+            "url": "https://linexic.top/2024/07/11/ladybird/",
+            "title": "GitHub创始人资助Ladybird开源",
+            "date_published": "2024-07-10T16:00:00.000Z",
+            "content_html": "<p>现在的互联网看此已经形成了一种趋势就是Chrome，Edge，Firefox三大浏览器巨头占据网络，并且现在有名的闭源浏览器Brave 和 Opera都采用了Google的Chromium搜索引擎而chrome就占领了「头头」地位了，这个时候有一个开源浏览器就显得尤为重要，不受商业模式的污染，只专心做自己的浏览器</p>\n<p>值得注意的时候，20年前，GitHub的创始人就为了Firefox买下了两页广告纸<br><img src=\"https://linexic.top/img/Firefox1.0.jpeg\" alt=\"Firefox\"><br>看得出来他很是喜爱和支持开源事业，他认为现在的市场需要一个独立并有创新精神的浏览器，所以投资100万赞助了这款浏览器</p>\n<p>它的独立性体现在两个方面：</p>\n<ul>\n<li>技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码</li>\n<li>收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营</li>\n</ul>\n<p>在这里贴一下Ladybird浏览器的<a href=\"https://github.com/LadybirdBrowser/ladybird\">GitHub仓库</a>地址。该项目目前还在开发阶段，预计2026年夏天上市</p>\n<blockquote>\n<p><a href=\"https://juejin.cn/post/7389145163857985587\">掘金关于Ladybird的热点地址</a></p>\n</blockquote>\n",
+            "tags": [
+                "浏览器"
+            ]
+        }
+    ]
+}

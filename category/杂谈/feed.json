@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "LineXic书屋 • All posts by \"杂谈\" category",
+    "description": "LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建",
+    "home_page_url": "https://linexic.top",
+    "items": [
+        {
+            "id": "https://linexic.top/2024/06/07/shenghuo/",
+            "url": "https://linexic.top/2024/06/07/shenghuo/",
+            "title": "忙碌的同时也别忘了看看生活",
+            "date_published": "2024-06-06T16:00:00.000Z",
+            "content_html": "<p><img src=\"https://img.linexic.top/file/0ceee73e6e1c93ea53830.jpg\" alt=\"夕阳🌇\"><br>我一直有看到好看的景色拍下来的习惯，总想着定格那一个美好的瞬间，以至于后来翻相册的时候也能不禁笑一下，去想那个美好的瞬间</p>\n<p><img src=\"https://img.linexic.top/file/5e11587af3d8b815eb012.jpg\" alt=\"小王子\"></p>\n<p>这句是有点治愈的一段话，配合这个&lt;&lt;小王子&gt;&gt;的图片，神了</p>\n<p>下面是我一直以来喜欢的图片</p>\n<p><img src=\"https://img.linexic.top/file/56447c13e5c9a409fb83f.jpg\" alt=\"小麦里的夕阳\"><br>小麦地里的夕阳<br><img src=\"https://img.linexic.top/file/54fb681a6753cc506b29b.jpg\" alt=\"阳台上\"><br>在我家阳台上拍到的<br><img src=\"https://img.linexic.top/file/ffb7ca73208503fd57461.jpg\" alt=\"狗\"><br>在山东玩的时候看到的狗，拍下来了，这个狗挺像我小时候的狗<br><img src=\"https://img.linexic.top/file/ae5f08794b84e14b42e4c.jpg\" alt=\"哔哩哔哩番剧\"><br>哔哩哔哩番剧找到的，忘了是哪个了<br><img src=\"https://img.linexic.top/file/fbb11d0891cd7a6cc3956.jpg\" alt=\"麦子\"><br><img src=\"https://img.linexic.top/file/3c2595d818252d4e06c59.jpg\" alt=\"sky\"><br><img src=\"https://img.linexic.top/file/dfae4e65891a5d12502a6.png\" alt=\"火蝾螈\"></p>\n",
+            "tags": [
+                "杂谈",
+                "碎碎念"
+            ]
+        }
+    ]
+}

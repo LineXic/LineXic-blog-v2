@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LineXic书屋 • Posts by &#34;hexo&#34; category</title>
+        <link>https://linexic.top</link>
+        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 20 Dec 2024 18:57:52 +0800</pubDate>
+        <lastBuildDate>Fri, 20 Dec 2024 18:57:52 +0800</lastBuildDate>
+        <category>2024</category>
+        <category>周年总结</category>
+        <category>百度统计</category>
+        <category>杂谈</category>
+        <category>碎碎念</category>
+        <category>博客</category>
+        <category>Discuz!Q</category>
+        <category>宝塔</category>
+        <category>GitHub</category>
+        <category>CSS</category>
+        <category>前端</category>
+        <category>HTML</category>
+        <category>Hexo</category>
+        <category>浏览器</category>
+        <category>月记</category>
+        <category>kali</category>
+        <category>termux</category>
+        <category>作文</category>
+        <item>
+            <guid isPermalink="true">https://linexic.top/2024/12/20/hello-world/</guid>
+            <title>Hello Hexo</title>
+            <link>https://linexic.top/2024/12/20/hello-world/</link>
+            <category>Hexo</category>
+            <pubDate>Fri, 20 Dec 2024 18:57:52 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;欢迎来到Hexo！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客从Jekyll迁移到Hexo&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

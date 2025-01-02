@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LineXic书屋</title>
+        <link>https://linexic.top</link>
+        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 29 Dec 2024 15:31:44 +0800</pubDate>
+        <lastBuildDate>Sun, 29 Dec 2024 15:31:44 +0800</lastBuildDate>
+        <category>2024</category>
+        <category>周年总结</category>
+        <category>百度统计</category>
+        <category>杂谈</category>
+        <category>碎碎念</category>
+        <category>博客</category>
+        <category>Discuz!Q</category>
+        <category>宝塔</category>
+        <category>GitHub</category>
+        <category>CSS</category>
+        <category>前端</category>
+        <category>HTML</category>
+        <category>Hexo</category>
+        <category>浏览器</category>
+        <category>月记</category>
+        <category>kali</category>
+        <category>termux</category>
+        <category>作文</category>
+        <item>
+            <guid isPermalink="true">https://linexic.top/2024/12/29/2024%E5%91%A8%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+            <title>再见2024 - 第一次写一篇年终总结</title>
+            <link>https://linexic.top/2024/12/29/2024%E5%91%A8%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+            <category>2024</category>
+            <category>周年总结</category>
+            <pubDate>Sun, 29 Dec 2024 15:31:44 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;看到身边的朋友都已经开始着手写年终总结想到自己的站点也&lt;span id=&#34;sitetime&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;script language=javascript&gt;
+    function siteTime(){
+        window.setTimeout(&#34;siteTime()&#34;, 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2023,09,02,00,00,00); //北京时间2016-12-1 00:00:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById(&#34;sitetime&#34;).innerHTML=&#34;匍匐爬行了&#34;+diffYears+&#34; 年 &#34;+diffDays+&#34; 天 &#34;+diffHours+&#34; 小时 &#34;+diffMinutes+&#34; 分钟 &#34;+diffSeconds+&#34; 秒&#34;;
+    }
+    siteTime();
+&lt;/script&gt;写了这么多月记还没写过「年记」，正好自己也睡不着于是开始构思内容
+&lt;h1 id=&#34;正文&#34;&gt;&lt;a href=&#34;#正文&#34; class=&#34;headerlink&#34; title=&#34;正文&#34;&gt;&lt;/a&gt;正文&lt;/h1&gt;&lt;p&gt;我是从去年九月开始写博客的，那时候我的脑海里还没有「年终总结」的概念，只是在十二月的时候发了一篇文章题为「聊聊我这四个月建博客的经历」&lt;br&gt;&lt;a href=&#34;https://linexic.top/2023/12/17/blog/&#34;&gt;https://linexic.top/2023/12/17/blog/&lt;/a&gt;&lt;br&gt;那时候只是草草的说了一些，具体想表达什么可能只在最后一段「心得」体现了出来，后来看那也算我狭义上的「总结」&lt;/p&gt;
+&lt;h1 id=&#34;今年我做了什么&#34;&gt;&lt;a href=&#34;#今年我做了什么&#34; class=&#34;headerlink&#34; title=&#34;今年我做了什么&#34;&gt;&lt;/a&gt;今年我做了什么&lt;/h1&gt;&lt;p&gt;既然是要总结那肯定离不开思考回顾这一年自己究竟做了什么，看看GitHub怎么说的吧&lt;br&gt;&lt;video id=&#34;video&#34; controls=&#34;true&#34; controlslist=&#34;nodownload&#34; preload=&#34;true&#34; allowfullscreen=&#34;true&#34; position= &#34;absolute&#34; width=&#34;100%&#34; poster=&#34;https://img.chengai77a6b.top/imgse/LineXic.jpeg&#34;&gt;&lt;br&gt;    &lt;source id=&#34;mp4&#34; src=&#34;https://img.chengai77a6b.top/video/unwrapped-LineXic.mp4&#34; type=&#34;video/mp4&#34; &gt;&lt;br&gt;&lt;/video&gt;&lt;br&gt;在今年最让我感怀的事肯定就是中考和体考了（还有博客终于稳定下来了！！）我记得体考的时候我也发过一篇文章，但由于那时候博客不稳定体考那篇文章就这样消失了。&lt;br&gt;我的中考分数也不是很理想，只能在本地捞一个六中上（不过有高中上就已经很满足了）我自己在的技术上也有一些进步（至少我能看懂一部分Vue了😂）只是项目什么的还是没有能拿出手的&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;再者就是我的博客除了趋于稳定外还换了主题，也算是互联网给我的一份元旦礼物吧🎁&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;高中&#34;&gt;&lt;a href=&#34;#高中&#34; class=&#34;headerlink&#34; title=&#34;高中&#34;&gt;&lt;/a&gt;高中&lt;/h2&gt;&lt;p&gt;中考完之后我就进入高中了，高中的课目前勉强能跟上吧，只是到后面我的文章肯定要越更新越少的毕竟高中的压力还摆在那呢&lt;/p&gt;
+&lt;h2 id=&#34;哔哩哔哩&#34;&gt;&lt;a href=&#34;#哔哩哔哩&#34; class=&#34;headerlink&#34; title=&#34;哔哩哔哩&#34;&gt;&lt;/a&gt;哔哩哔哩&lt;/h2&gt;&lt;p&gt;我的哔哩哔哩年度报告也出来了发现居然搞笑和动画标签占比多也有可能是我不在家时弟弟妹妹用云视厅看的&lt;br&gt;&lt;img src=&#34;https://s21.ax1x.com/2024/12/29/pAxhgoR.png&#34; alt=&#34;哔哩哔哩&#34;&gt;&lt;br&gt;&lt;img src=&#34;https://s21.ax1x.com/2024/12/29/pAxhRF1.png&#34; alt=&#34;笑出咕咕叫&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;游戏&#34;&gt;&lt;a href=&#34;#游戏&#34; class=&#34;headerlink&#34; title=&#34;游戏&#34;&gt;&lt;/a&gt;游戏&lt;/h2&gt;&lt;p&gt;游戏的话我现在只是玩《使命召唤手游》和《Minecraft》，两款都是不错的游戏，（突然想起来同学让我下载的《王者荣耀》还没下载！）&lt;br&gt;使命召唤现在已经换了一个号玩，mc也一直在玩一个服务器玩的也有挺长时间了&lt;br&gt;还有一个就是在今年十一月份我&lt;a href=&#34;https://klpbbs.com/thread-151298-1-1.html&#34;&gt;入正&lt;/a&gt;了&lt;br&gt;&lt;img src=&#34;https://zj-data.klpbbs.com/forum/202411/17/231748mobyb1bt1yo1nwni.jpg&#34; alt=&#34;入正啦&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;家人-朋友&#34;&gt;&lt;a href=&#34;#家人-朋友&#34; class=&#34;headerlink&#34; title=&#34;家人 &amp;amp; 朋友&#34;&gt;&lt;/a&gt;家人 &amp;amp; 朋友&lt;/h2&gt;&lt;p&gt;这一年里我收获了很多友情也有一些友情随着中考结束就不再出现同时在家人眼里的我好像更成熟了，印象深刻的就是姥姥姥爷在我家住，有一次我要写作业了他们就找了个理由散步去了说是不要打扰我，放在之前富有知识姥爷看到我写作业多少是要说上两句的，不过现在没有了。这件事让我挺感慨的&lt;/p&gt;
+&lt;p&gt;我和高中一个不错的朋友认识居然是通过歌曲认识的，我们也算是趣味相投 - 我们都喜欢并且有时哼一些歌我感觉挺不错的&lt;/p&gt;
+&lt;h1 id=&#34;今年的评价&#34;&gt;&lt;a href=&#34;#今年的评价&#34; class=&#34;headerlink&#34; title=&#34;今年的评价&#34;&gt;&lt;/a&gt;今年的评价&lt;/h1&gt;&lt;p&gt;网上一直有说自从2018年之后时间就像按下了加速键，不错，今年又是一眨眼一睁眼就过去了，想起在2018年我还是个小学生，那时候和朋友过生日总要去一家汉堡店吃汉堡打游戏，不过那时候的我也并不擅长打游戏&lt;/p&gt;
+&lt;p&gt;学校里的活动？目前还没办，唯一一次的选体育生小科活动还落榜了🌚&lt;/p&gt;
+&lt;h1 id=&#34;展望&#34;&gt;&lt;a href=&#34;#展望&#34; class=&#34;headerlink&#34; title=&#34;展望&#34;&gt;&lt;/a&gt;展望&lt;/h1&gt;&lt;div class=&#34;tag-plugin colorful note&#34; color=&#34;yellow&#34;&gt;&lt;div class=&#34;body&#34;&gt;&lt;p&gt;生命不息，折腾不止&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;对于新的一年我也会学习一些新鲜玩意然后就是希望高中的时候分数提一提&lt;/p&gt;
+&lt;p&gt;2025即将到来对我的挑战也不少，我现在感觉我正站在一条岔路口，路口的指示牌正在等待我的选择:&lt;code&gt;Forward or backward&lt;/code&gt;我学校的心理老师说过:人无时无刻都在做选择，甚至你不去选择也是你的选择。感触颇深&lt;/p&gt;
+&lt;p&gt;那就顶峰相见（中二）&lt;/p&gt;
+&lt;span class=&#34;tag-plugin emoji&#34;&gt;&lt;img no-lazy=&#34;&#34; class=&#34;inline&#34; src=&#34;https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png&#34;/&gt;&lt;/span&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

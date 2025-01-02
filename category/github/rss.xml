@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LineXic书屋 • Posts by &#34;github&#34; category</title>
+        <link>https://linexic.top</link>
+        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 22 Dec 2024 21:28:00 +0800</pubDate>
+        <lastBuildDate>Sun, 22 Dec 2024 21:28:00 +0800</lastBuildDate>
+        <category>2024</category>
+        <category>周年总结</category>
+        <category>百度统计</category>
+        <category>杂谈</category>
+        <category>碎碎念</category>
+        <category>博客</category>
+        <category>Discuz!Q</category>
+        <category>宝塔</category>
+        <category>GitHub</category>
+        <category>CSS</category>
+        <category>前端</category>
+        <category>HTML</category>
+        <category>Hexo</category>
+        <category>浏览器</category>
+        <category>月记</category>
+        <category>kali</category>
+        <category>termux</category>
+        <category>作文</category>
+        <item>
+            <guid isPermalink="true">https://linexic.top/2024/12/22/github-star-and-project/</guid>
+            <title>你曾经star学习的项目现在能看懂了吗？</title>
+            <link>https://linexic.top/2024/12/22/github-star-and-project/</link>
+            <category>GitHub</category>
+            <pubDate>Sun, 22 Dec 2024 21:28:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我有随时翻看GitHub Star的习惯，尤其是下载了GitHub App后更加方便我查看了，后来我偶然翻到了自己曾经折腾过的项目&lt;a href=&#34;https://github.com/MorFansLab/LiteWebChat_Frame&#34;&gt;LiteWebChat_Frame&lt;/a&gt;看了看文档忽然一个问题映入了我的脑海&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自己曾经因为没看懂而star的项目现在看懂了吗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这也是我写文的缘由且也想和大家聊聊这件事&lt;/p&gt;
+&lt;h1 id=&#34;三个阶段&#34;&gt;&lt;a href=&#34;#三个阶段&#34; class=&#34;headerlink&#34; title=&#34;三个阶段&#34;&gt;&lt;/a&gt;三个阶段&lt;/h1&gt;&lt;p&gt;我又重新看了一遍我的Star，发现可分为三个阶段&lt;br&gt;1.Minecraft及相关启动器&lt;br&gt;2.命令行及后端&lt;br&gt;3.前端及各种学习书籍&lt;/p&gt;
+&lt;h2 id=&#34;Minecraft&#34;&gt;&lt;a href=&#34;#Minecraft&#34; class=&#34;headerlink&#34; title=&#34;Minecraft&#34;&gt;&lt;/a&gt;Minecraft&lt;/h2&gt;&lt;p&gt;最开始注册GitHub一是因为Minecraft的插件等开源在这里，还有就是那时候已经对编程产生点兴趣了，想要在这里学习但还是以Minecraft为主了&lt;br&gt;那时候知道一些启动器开源就star下来方便找了&lt;/p&gt;
+&lt;h2 id=&#34;命令行&#34;&gt;&lt;a href=&#34;#命令行&#34; class=&#34;headerlink&#34; title=&#34;命令行&#34;&gt;&lt;/a&gt;命令行&lt;/h2&gt;&lt;p&gt;这个就和Linux有点关系了，Star过一个现在也很知名的Thefuck，说是输入命令&lt;code&gt;fuck&lt;/code&gt;就能帮你指出你输入错误的命令行，对一些记不住的命令小白还是挺友好的，不过到现在我也没成功安装上这一&lt;code&gt;神器&lt;/code&gt;知道我已经能熟练记住命令行…&lt;/p&gt;
+&lt;p&gt;关于后端就是Java了，严格上说我的第一语言是Java但后来也没学成就走向了更容易直观看到自己成果的前端了。但在这一期间也跟风Star了一些现在看来没用当时看来成宝的仓库，但这些仓库有一个共同点，就是上传一堆image和ppt到仓库里，现在想来也不知道他们想要干什么，好不容易有个在线阅读的网址吧打开后还是无法访问，现在才知道&lt;a href=&#34;https://javaguide.cn/&#34;&gt;JavaGuide&lt;/a&gt;有多香&lt;/p&gt;
+&lt;h2 id=&#34;前端&#34;&gt;&lt;a href=&#34;#前端&#34; class=&#34;headerlink&#34; title=&#34;前端&#34;&gt;&lt;/a&gt;前端&lt;/h2&gt;&lt;p&gt;看前端的时候就知道要注重阅读和实践了&lt;a href=&#34;https://web.qianguyihao.com/&#34;&gt;千古前端&lt;/a&gt;还有&lt;a href=&#34;https://code.yupi.icu/&#34;&gt;鱼皮编程宝典&lt;/a&gt;都是那个时候的东西甚至在前端的路上要越走越远，这个时候就是看的在线教程了，也想过购买实体书籍什么的，但一直没有&lt;/p&gt;
+&lt;p&gt;后面就是这框架那框架，这轮子那轮子的，比如&lt;a href=&#34;https://github.com/vuejs/core&#34;&gt;Vue&lt;/a&gt;尽管我尝试去阅读他的源码也没阅读出个所以然&lt;/p&gt;
+&lt;p&gt;而后感觉自己学习差不多了，三件套已经都涉猎一些后就开始搞建站，后面才发现我太天真了，因为一些Vue和nuxt搭建的博客我看不懂他的源码！！尽管那些样式很炫酷我很喜欢但到我这里我是不知道从哪里下手修改的，后来还好点，弄折腾出一个所以然来了&lt;/p&gt;
+&lt;h1 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h1&gt;&lt;p&gt;感觉聊着这么多都跑题了，现在回归标题，我的答案是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;看懂了，但只看懂了一小部分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;加上也有一些其他新奇的如996.ICU，HelloGitHub这些也很不错的项目我也都有Star也有一些算法正在学习&lt;/p&gt;
+&lt;p&gt;最后我认为挺重要的一点:如果一年来你之前的疑惑没有解答那就不能称作是真正的学习，学习总是要知道更多的&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

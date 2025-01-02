@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LineXic书屋 • Posts by &#34;termux&#34; tag</title>
+        <link>https://linexic.top</link>
+        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 03 Oct 2023 22:54:00 +0800</pubDate>
+        <lastBuildDate>Tue, 03 Oct 2023 22:54:00 +0800</lastBuildDate>
+        <category>2024</category>
+        <category>周年总结</category>
+        <category>百度统计</category>
+        <category>杂谈</category>
+        <category>碎碎念</category>
+        <category>博客</category>
+        <category>Discuz!Q</category>
+        <category>宝塔</category>
+        <category>GitHub</category>
+        <category>CSS</category>
+        <category>前端</category>
+        <category>HTML</category>
+        <category>Hexo</category>
+        <category>浏览器</category>
+        <category>月记</category>
+        <category>kali</category>
+        <category>termux</category>
+        <category>作文</category>
+        <item>
+            <guid isPermalink="true">https://linexic.top/2023/10/03/termux-kali/</guid>
+            <title>【termux】安装kali</title>
+            <link>https://linexic.top/2023/10/03/termux-kali/</link>
+            <category>kali</category>
+            <category>termux</category>
+            <pubDate>Tue, 03 Oct 2023 22:54:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;你需要准备的&#34;&gt;&lt;a href=&#34;#你需要准备的&#34; class=&#34;headerlink&#34; title=&#34;你需要准备的&#34;&gt;&lt;/a&gt;你需要准备的&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://termux.dev/en/&#34; title=&#34;termux&#34;&gt;termux&lt;/a&gt;（官网）&lt;br&gt;&lt;a href=&#34;https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk&#34;&gt;termux&lt;/a&gt;（GitHub下载）&lt;br&gt;一双手，一部手机，一个键盘（不是&lt;/p&gt;
+&lt;p&gt;打开Termux，先切换pkg源&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sed -i &lt;span class=&#34;string&#34;&gt;&amp;#x27;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#x27;&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$PREFIX&lt;/span&gt;/etc/apt/sources.list &amp;amp;&amp;amp; apt update &amp;amp;&amp;amp; apt upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h1 id=&#34;什么是kali&#34;&gt;&lt;a href=&#34;#什么是kali&#34; class=&#34;headerlink&#34; title=&#34;什么是kali&#34;&gt;&lt;/a&gt;什么是kali&lt;/h1&gt;&lt;p&gt;Kali Linux 是专门用于渗透测试的Linux操作系统，它由BackTrack发展而来。在整合了IWHAX、WHOPPIX和Auditor这三种渗透测试专用Live Linux后，BackTrack正式改名为Kali LInux。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更详细的参考这篇文章，本文具体介绍如何安装：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/qq_45740212/article/details/113239157&#34; title=&#34;blog.csdn.net/article/...113239157&#34;&gt;blog.csdn.net&amp;#x2F;article&amp;#x2F;…113239157&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;正文&#34;&gt;&lt;a href=&#34;#正文&#34; class=&#34;headerlink&#34; title=&#34;正文&#34;&gt;&lt;/a&gt;正文&lt;/h1&gt;&lt;p&gt;输入一下命令：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这是一个主要在新系统安装之后或安装新软件包之前调用的命令，更新&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/fcec169b4c4bdc28e6692.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将软件包升级到最新版本：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/997a7e8810ccbb902d011.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;之后会选择yes或no，我们选择“Y“然后回车&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/5c703eff23100a60ae00e.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;等待一会&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/0353798d81cbb65577657.png&#34;&gt;&lt;br&gt;获得wget包信息。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;要拥有共享存储，您需要授予Termux存储访问权限。不允许访问外部连接的存储设备。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;termux-setup-storage&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/ac06eeb33eb0cb1765721.png&#34;&gt;&lt;br&gt;安装wget，当系统询问您是否要继续时，请按Y并回车。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt install wget&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/90ac854bb0bc1172ab3ce.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当询问您“是否要继续”时，按Y并回车。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/174877f0922981ab33a38.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下载NetHunter安装文件。确保输入正确的地址。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget -O install-nethunter-termux https://offs.ec/2MceZWr&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/de3e7875b950eb41bf838.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;更改权限以便可以执行文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;chmod&lt;/span&gt; +x install-nethunter-termux&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/3cb3772ea606cb8178dbf.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;键入以下命令以执行下载的安装文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./install-nethunter-termux&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/c0eca379366d830ef94d1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装将需要一段时间，当要求删除rootfs时，输入N。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/698982ac5796d86bf37cf.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最后查看&lt;a href=&#34;https://www.kali.org/&#34; title=&#34;kali官网&#34;&gt;kali官网&lt;/a&gt;或者上网查询了解更多kali用法&lt;br&gt;以上所有图源来自&lt;a href=&#34;https://m.youtube.com/watch?v=KxOGyuGq0Ts&amp;t=186s&#34; title=&#34;油管视频文档&#34;&gt;油管视频文档&lt;/a&gt;&lt;br&gt;&lt;br&gt;哔哩哔哩内的视频（搬运）&lt;a href=&#34;https://b23.tv/FQSWvCI&#34;&gt;【你的下一台Kali，何必是电脑（无Root）（小白教程）-哔哩哔哩】 &lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

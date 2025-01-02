@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>LineXic书屋 • Posts by &#34;浏览器&#34; tag</title>
+        <link>https://linexic.top</link>
+        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 11 Jul 2024 00:00:00 +0800</pubDate>
+        <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0800</lastBuildDate>
+        <category>2024</category>
+        <category>周年总结</category>
+        <category>百度统计</category>
+        <category>杂谈</category>
+        <category>碎碎念</category>
+        <category>博客</category>
+        <category>Discuz!Q</category>
+        <category>宝塔</category>
+        <category>GitHub</category>
+        <category>CSS</category>
+        <category>前端</category>
+        <category>HTML</category>
+        <category>Hexo</category>
+        <category>浏览器</category>
+        <category>月记</category>
+        <category>kali</category>
+        <category>termux</category>
+        <category>作文</category>
+        <item>
+            <guid isPermalink="true">https://linexic.top/2024/07/11/ladybird/</guid>
+            <title>GitHub创始人资助Ladybird开源</title>
+            <link>https://linexic.top/2024/07/11/ladybird/</link>
+            <category>浏览器</category>
+            <pubDate>Thu, 11 Jul 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;现在的互联网看此已经形成了一种趋势就是Chrome，Edge，Firefox三大浏览器巨头占据网络，并且现在有名的闭源浏览器Brave 和 Opera都采用了Google的Chromium搜索引擎而chrome就占领了「头头」地位了，这个时候有一个开源浏览器就显得尤为重要，不受商业模式的污染，只专心做自己的浏览器&lt;/p&gt;
+&lt;p&gt;值得注意的时候，20年前，GitHub的创始人就为了Firefox买下了两页广告纸&lt;br&gt;&lt;img src=&#34;https://linexic.top/img/Firefox1.0.jpeg&#34; alt=&#34;Firefox&#34;&gt;&lt;br&gt;看得出来他很是喜爱和支持开源事业，他认为现在的市场需要一个独立并有创新精神的浏览器，所以投资100万赞助了这款浏览器&lt;/p&gt;
+&lt;p&gt;它的独立性体现在两个方面：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;技术：不使用 Blink、WebKit、Gecko 或任何其他浏览器引擎的代码&lt;/li&gt;
+&lt;li&gt;收益：虽然资金来自赞助商，但赞助商无权干涉项目的开发和运营&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这里贴一下Ladybird浏览器的&lt;a href=&#34;https://github.com/LadybirdBrowser/ladybird&#34;&gt;GitHub仓库&lt;/a&gt;地址。该项目目前还在开发阶段，预计2026年夏天上市&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://juejin.cn/post/7389145163857985587&#34;&gt;掘金关于Ladybird的热点地址&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
