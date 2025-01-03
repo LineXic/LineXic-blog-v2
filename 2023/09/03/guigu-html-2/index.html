@@ -167,7 +167,12 @@ HTML（Hypertext Markup Langguage）是一个超文本编辑语言
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023/09/22/github-1/">GitHub上有趣/实用的项目</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/09/02/guigu-html-1/">【前端.1】网页简史</a></div></section></div>
 
-
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2023/09/02/guigu-html-1/" title="【前端.1】网页简史"><span class="title">【前端.1】网页简史</span></a><a class="item" href="/2024/02/07/guigu-html-10/" title="【前端10】语义化标签"><span class="title">【前端10】语义化标签</span></a><a class="item" href="/2024/02/17/guigu-html-11/" title="【前端11】块和行内元素"><span class="title">【前端11】块和行内元素</span></a><a class="item" href="/2024/02/21/guigu-html-12/" title="【前端12】列表"><span class="title">【前端12】列表</span></a><a class="item" href="/2024/12/07/guigu-25-文档流/" title="【前端25】文档流"><span class="title">【前端25】文档流</span></a></div></section></div>
 
 
   <div class="related-wrap md-text" id="comments">
@@ -521,7 +526,7 @@ HTML（Hypertext Markup Langguage）是一个超文本编辑语言
 
   <script type="module">
   const el = document.getElementById('twikoo_container');
-  util.viewportLazyload(el, load_twikoo, false);
+  util.viewportLazyload(el, load_twikoo, true);
 
   function load_twikoo() {
     if (!el) return;

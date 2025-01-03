@@ -140,7 +140,7 @@ var _hmt = _hmt || [];
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/08/03/guigu-css-20/">【前端20】超链接的伪类和伪元素</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/07/05/baidu-tongji/">记一次百度统计的应用</a></div></section></div>
 
-
+<div class="related-wrap" id="related-posts"></div>
 
 
   <div class="related-wrap md-text" id="comments">
@@ -487,7 +487,7 @@ var _hmt = _hmt || [];
 
   <script type="module">
   const el = document.getElementById('twikoo_container');
-  util.viewportLazyload(el, load_twikoo, false);
+  util.viewportLazyload(el, load_twikoo, true);
 
   function load_twikoo() {
     if (!el) return;

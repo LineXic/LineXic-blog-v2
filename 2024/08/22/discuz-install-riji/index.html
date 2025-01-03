@@ -202,7 +202,12 @@ var _hmt = _hmt || [];
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/09/01/month-2/">月记之二:生活与学业</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/08/13/guigu-css-21/">【前端21】样式的继承</a></div></section></div>
 
-
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2024/07/05/baidu-tongji/" title="记一次百度统计的应用"><span class="title">记一次百度统计的应用</span></a></div></section></div>
 
 
   <div class="related-wrap md-text" id="comments">
@@ -556,7 +561,7 @@ var _hmt = _hmt || [];
 
   <script type="module">
   const el = document.getElementById('twikoo_container');
-  util.viewportLazyload(el, load_twikoo, false);
+  util.viewportLazyload(el, load_twikoo, true);
 
   function load_twikoo() {
     if (!el) return;

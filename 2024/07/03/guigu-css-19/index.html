@@ -232,7 +232,12 @@ var _hmt = _hmt || [];
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/07/05/baidu-tongji/">记一次百度统计的应用</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/06/29/guigu-css-18/">【前端18】复合选择器和关系选择器</a></div></section></div>
 
-
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2024/12/07/guigu-25-文档流/" title="【前端25】文档流"><span class="title">【前端25】文档流</span></a><a class="item" href="/2024/06/08/guigu-css-16/" title="【前端16】CSS简介和编写位置"><span class="title">【前端16】CSS简介和编写位置</span></a><a class="item" href="/2024/06/25/guigu-css-17/" title="【前端17】CSS的基本语法和常用选择器"><span class="title">【前端17】CSS的基本语法和常用选择器</span></a><a class="item" href="/2024/06/29/guigu-css-18/" title="【前端18】复合选择器和关系选择器"><span class="title">【前端18】复合选择器和关系选择器</span></a><a class="item" href="/2024/08/03/guigu-css-20/" title="【前端20】超链接的伪类和伪元素"><span class="title">【前端20】超链接的伪类和伪元素</span></a></div></section></div>
 
 
   <div class="related-wrap md-text" id="comments">
@@ -586,7 +591,7 @@ var _hmt = _hmt || [];
 
   <script type="module">
   const el = document.getElementById('twikoo_container');
-  util.viewportLazyload(el, load_twikoo, false);
+  util.viewportLazyload(el, load_twikoo, true);
 
   function load_twikoo() {
     if (!el) return;
