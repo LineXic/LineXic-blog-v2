@@ -1,37 +1,32 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>LineXic书屋 • Posts by &#34;百度统计&#34; category</title>
-        <link>https://linexic.top</link>
-        <description>LineXic博客-一个专注知识分享学习生活和日常的博客，因为里面的故事很精彩叫其书屋-基于hexo主题搭建</description>
-        <language>zh-CN</language>
-        <pubDate>Fri, 05 Jul 2024 00:00:00 +0800</pubDate>
-        <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0800</lastBuildDate>
-        <category>2024</category>
-        <category>周年总结</category>
-        <category>百度统计</category>
-        <category>杂谈</category>
-        <category>碎碎念</category>
-        <category>博客</category>
-        <category>Discuz!Q</category>
-        <category>宝塔</category>
-        <category>GitHub</category>
-        <category>CSS</category>
-        <category>前端</category>
-        <category>HTML</category>
-        <category>Hexo</category>
-        <category>浏览器</category>
-        <category>月记</category>
-        <category>kali</category>
-        <category>termux</category>
-        <category>作文</category>
-        <item>
-            <guid isPermalink="true">https://linexic.top/2024/07/05/baidu-tongji/</guid>
-            <title>记一次百度统计的应用</title>
-            <link>https://linexic.top/2024/07/05/baidu-tongji/</link>
-            <category>百度统计</category>
-            <pubDate>Fri, 05 Jul 2024 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;百度统计的应用&#34;&gt;&lt;a href=&#34;#百度统计的应用&#34; class=&#34;headerlink&#34; title=&#34;百度统计的应用&#34;&gt;&lt;/a&gt;百度统计的应用&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/6ef77ee8f00e0fc3cb469.jpg&#34; alt=&#34;百度统计&#34;&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://linexic.top</id>
+    <title>LineXic书屋 • Posts by &#34;折腾日记&#34; category</title>
+    <link href="https://linexic.top" />
+    <updated>2024-07-04T16:00:00.000Z</updated>
+    <category term="2024" />
+    <category term="周年总结" />
+    <category term="百度统计" />
+    <category term="杂谈" />
+    <category term="碎碎念" />
+    <category term="博客" />
+    <category term="Discuz!Q" />
+    <category term="宝塔" />
+    <category term="GitHub" />
+    <category term="CSS" />
+    <category term="前端" />
+    <category term="HTML" />
+    <category term="Hexo" />
+    <category term="浏览器" />
+    <category term="月记" />
+    <category term="kali" />
+    <category term="termux" />
+    <category term="作文" />
+    <entry>
+        <id>https://linexic.top/2024/07/05/baidu-tongji/</id>
+        <title>记一次百度统计的应用</title>
+        <link rel="alternate" href="https://linexic.top/2024/07/05/baidu-tongji/"/>
+        <content type="html">&lt;h1 id=&#34;百度统计的应用&#34;&gt;&lt;a href=&#34;#百度统计的应用&#34; class=&#34;headerlink&#34; title=&#34;百度统计的应用&#34;&gt;&lt;/a&gt;百度统计的应用&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://img.linexic.top/file/6ef77ee8f00e0fc3cb469.jpg&#34; alt=&#34;百度统计&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;灵感&#34;&gt;&lt;a href=&#34;#灵感&#34; class=&#34;headerlink&#34; title=&#34;灵感&#34;&gt;&lt;/a&gt;灵感&lt;/h2&gt;&lt;p&gt;一次看到了承挨博客脚页下的博客统计，感觉很美观，就像着自己弄一个&lt;br&gt;&lt;img src=&#34;https://img.linexic.top/file/ff6fecd96e598fb740d07.jpg&#34; alt=&#34;灵感&#34;&gt;&lt;br&gt;最开始想着是用&lt;a href=&#34;https://busuanzi.ibruce.info/&#34;&gt;不蒜子&lt;/a&gt;计数器，可发现了一个诟病就是：网页每次刷新都会提示访问量加一，这样感觉有点假，况且也无法做到像上图那样每一个都面面俱到，折腾了好一会我决定开始转变思路&lt;/p&gt;
 &lt;h1 id=&#34;百度统计&#34;&gt;&lt;a href=&#34;#百度统计&#34; class=&#34;headerlink&#34; title=&#34;百度统计&#34;&gt;&lt;/a&gt;百度统计&lt;/h1&gt;&lt;p&gt;我就想既然主页面没法弄，那我就从”后端”入手即百度统计&lt;/p&gt;
 &lt;p&gt;关于百度统计hux的主题是内置了的，需要我们在&lt;code&gt;_config.yml&lt;/code&gt;下有专门的字段，原文档介绍如下&lt;/p&gt;
@@ -46,7 +41,8 @@
 &lt;p&gt;但我添加后尴尬的一幕发生了，GitHub报错了，我又在那里折腾了半个小时还是没有解决，甚至差点弄得我的博客仓库的文件不受理更新了&lt;/p&gt;
 &lt;p&gt;无奈我按照统计官网的方法，把它添加到了&lt;code&gt;_includes/head.html&lt;/code&gt;中这是hux主题中掌管全局的地方，可以理解为&lt;code&gt;古希腊掌管head全局的神&lt;/code&gt;果然好礼，在统计中点击检查代码后GitHub不报错百度也没有错误，提示代码位置正确。果然，自己折腾有时候是好的&lt;/p&gt;
 &lt;p&gt;现在我也能在百度中查看自己网站的流量显示啦&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="百度统计" />
+        <updated>2024-07-04T16:00:00.000Z</updated>
+    </entry>
+</feed>
